@@ -89,7 +89,7 @@
 
 
   <h1 id="VsGlobal_Network" data-uid="VsGlobal.Network" class="text-break">
-Class Network  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Network.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class Network  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Network.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -156,10 +156,10 @@ Class Network  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="VsGlobal_Network_Broadcast__1___0_System_String_" data-uid="VsGlobal.Network.Broadcast``1(``0,System.String)">
   Broadcast&lt;T&gt;(T, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Network.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Network.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Invoked when VsGlobal receives a payload with <a class="xref" href="VsGlobal.OnPayloadReceivedEventArgs.html">OnPayloadReceivedEventArgs</a><p>Note; we don't have to be connected to call this. It's thread safe and sitting there patiently for the websocket state to be 'Open' (connected)</p><example><p>Using a lambda:</p><pre><code class="lang-csharp">//First, we define our network packet somewhere like so.
+  <div class="markdown level1 summary"><p>Invoked when VsGlobal receives a payload with <a class="xref" href="VsGlobal.EventArguments.OnPayloadReceivedEventArgs.html">OnPayloadReceivedEventArgs</a><p>Note; we don't have to be connected to call this. It's thread safe and sitting there patiently for the websocket state to be 'Open' (connected)</p><example><p>Using a lambda:</p><pre><code class="lang-csharp">//First, we define our network packet somewhere like so.
 [ProtoContract(ImplicitFields = ImplicitFields.AllPublic)]
 public class CustomNetworkMessage
 {
@@ -167,12 +167,12 @@ public bool didSomething;
 public IClientPlayer sender;
 public string message = &quot;Default Message&quot;;
 }
-<pre><code>                                                                                                                                                                                                                                                                                       // Later on, in a function body ...
+<pre><code>                                                                                                                                                                                                                                                                                                      // Later on, in a function body ...
 
-                                                                                                                                                                                                                                                                                       // Now, all we have to do is call broadcast. It's generic, so you can throw _anything_ in there. string, class, struct- Whatever.
-                                                                                                                                                                                                                                                                                       // What that will do is send the packet to the server and relay it to others.
-                                                                                                                                                                                                                                                                                       // Once received, it'll invoke 
-                                                                                                                                                                                                                                                                                       VsGlobal.Broadcast(new CustomNetworkMessage(){didSomething = true, sender = api.World.Player, message = &quot;Grungus&quot;});&lt;/code&gt;&lt;/pre&gt;&lt;/example&gt;
+                                                                                                                                                                                                                                                                                                      // Now, all we have to do is call broadcast. It's generic, so you can throw _anything_ in there. string, class, struct- Whatever.
+                                                                                                                                                                                                                                                                                                      // What that will do is send the packet to the server and relay it to others.
+                                                                                                                                                                                                                                                                                                      // Once received, it'll invoke 
+                                                                                                                                                                                                                                                                                                      VsGlobal.Broadcast(new CustomNetworkMessage(){didSomething = true, sender = api.World.Player, message = &quot;Grungus&quot;});&lt;/code&gt;&lt;/pre&gt;&lt;/example&gt;
 </code></pre>
 </code></pre></example></div>
   <div class="markdown level1 conceptual"></div>
@@ -209,7 +209,7 @@ public string message = &quot;Default Message&quot;;
 
   <h3 id="VsGlobal_Network_GetDefaultModule" data-uid="VsGlobal.Network.GetDefaultModule">
   GetDefaultModule()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Network.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Network.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Test</p>
@@ -242,7 +242,7 @@ public string message = &quot;Default Message&quot;;
 
   <h3 id="VsGlobal_Network_Initialize_Vintagestory_API_Client_ICoreClientAPI_System_String_" data-uid="VsGlobal.Network.Initialize(Vintagestory.API.Client.ICoreClientAPI,System.String)">
   Initialize(ICoreClientAPI, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Network.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Network.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -275,7 +275,7 @@ public string message = &quot;Default Message&quot;;
 
   <h3 id="VsGlobal_Network_SetupHandlers_Vintagestory_API_Client_ICoreClientAPI_" data-uid="VsGlobal.Network.SetupHandlers(Vintagestory.API.Client.ICoreClientAPI)">
   SetupHandlers(ICoreClientAPI)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Network.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Network.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -306,7 +306,7 @@ public string message = &quot;Default Message&quot;;
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Network.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Network.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
 

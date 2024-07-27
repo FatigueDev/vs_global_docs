@@ -42,10 +42,130 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.EventArguments.OnClientReadyEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.EventArguments.OnClientReadyEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.EventArguments.OnConnectEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.EventArguments.OnConnectEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.EventArguments.OnDisconnectEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.EventArguments.OnDisconnectEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.EventArguments.OnPayloadReceivedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.EventArguments.OnPayloadReceivedEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.EventArguments.OnReconnectEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.EventArguments.OnReconnectEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.EventArguments.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.EventArguments.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/VsGlobal.Events.yml",
       "output": {
         ".html": {
           "relative_path": "api/VsGlobal.Events.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.Handlers.OnClientReadyHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.Handlers.OnClientReadyHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.Handlers.OnConnectHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.Handlers.OnConnectHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.Handlers.OnDisconnectHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.Handlers.OnDisconnectHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.Handlers.OnPayloadReceivedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.Handlers.OnPayloadReceivedHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.Handlers.OnReconnectHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.Handlers.OnReconnectHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.Handlers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.Handlers.html"
         }
       },
       "version": ""
@@ -196,6 +316,36 @@
       "output": {
         ".html": {
           "relative_path": "api/VsGlobal.Packets.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.Proto.Payload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.Proto.Payload.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.Proto.PayloadExtensionMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.Proto.PayloadExtensionMethods.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.Proto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.Proto.html"
         }
       },
       "version": ""

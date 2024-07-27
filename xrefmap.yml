@@ -62,6 +62,78 @@ references:
   commentId: F:VsGlobal.Config.token
   fullName: VsGlobal.Config.token
   nameWithType: Config.token
+- uid: VsGlobal.EventArguments
+  name: VsGlobal.EventArguments
+  href: api/VsGlobal.EventArguments.html
+  commentId: N:VsGlobal.EventArguments
+  fullName: VsGlobal.EventArguments
+  nameWithType: VsGlobal.EventArguments
+- uid: VsGlobal.EventArguments.OnClientReadyEventArgs
+  name: OnClientReadyEventArgs
+  href: api/VsGlobal.EventArguments.OnClientReadyEventArgs.html
+  commentId: T:VsGlobal.EventArguments.OnClientReadyEventArgs
+  fullName: VsGlobal.EventArguments.OnClientReadyEventArgs
+  nameWithType: OnClientReadyEventArgs
+- uid: VsGlobal.EventArguments.OnClientReadyEventArgs.config
+  name: config
+  href: api/VsGlobal.EventArguments.OnClientReadyEventArgs.html#VsGlobal_EventArguments_OnClientReadyEventArgs_config
+  commentId: F:VsGlobal.EventArguments.OnClientReadyEventArgs.config
+  fullName: VsGlobal.EventArguments.OnClientReadyEventArgs.config
+  nameWithType: OnClientReadyEventArgs.config
+- uid: VsGlobal.EventArguments.OnConnectEventArgs
+  name: OnConnectEventArgs
+  href: api/VsGlobal.EventArguments.OnConnectEventArgs.html
+  commentId: T:VsGlobal.EventArguments.OnConnectEventArgs
+  fullName: VsGlobal.EventArguments.OnConnectEventArgs
+  nameWithType: OnConnectEventArgs
+- uid: VsGlobal.EventArguments.OnConnectEventArgs.module
+  name: module
+  href: api/VsGlobal.EventArguments.OnConnectEventArgs.html#VsGlobal_EventArguments_OnConnectEventArgs_module
+  commentId: F:VsGlobal.EventArguments.OnConnectEventArgs.module
+  fullName: VsGlobal.EventArguments.OnConnectEventArgs.module
+  nameWithType: OnConnectEventArgs.module
+- uid: VsGlobal.EventArguments.OnDisconnectEventArgs
+  name: OnDisconnectEventArgs
+  href: api/VsGlobal.EventArguments.OnDisconnectEventArgs.html
+  commentId: T:VsGlobal.EventArguments.OnDisconnectEventArgs
+  fullName: VsGlobal.EventArguments.OnDisconnectEventArgs
+  nameWithType: OnDisconnectEventArgs
+- uid: VsGlobal.EventArguments.OnDisconnectEventArgs.module
+  name: module
+  href: api/VsGlobal.EventArguments.OnDisconnectEventArgs.html#VsGlobal_EventArguments_OnDisconnectEventArgs_module
+  commentId: F:VsGlobal.EventArguments.OnDisconnectEventArgs.module
+  fullName: VsGlobal.EventArguments.OnDisconnectEventArgs.module
+  nameWithType: OnDisconnectEventArgs.module
+- uid: VsGlobal.EventArguments.OnPayloadReceivedEventArgs
+  name: OnPayloadReceivedEventArgs
+  href: api/VsGlobal.EventArguments.OnPayloadReceivedEventArgs.html
+  commentId: T:VsGlobal.EventArguments.OnPayloadReceivedEventArgs
+  fullName: VsGlobal.EventArguments.OnPayloadReceivedEventArgs
+  nameWithType: OnPayloadReceivedEventArgs
+- uid: VsGlobal.EventArguments.OnPayloadReceivedEventArgs.payload
+  name: payload
+  href: api/VsGlobal.EventArguments.OnPayloadReceivedEventArgs.html#VsGlobal_EventArguments_OnPayloadReceivedEventArgs_payload
+  commentId: F:VsGlobal.EventArguments.OnPayloadReceivedEventArgs.payload
+  fullName: VsGlobal.EventArguments.OnPayloadReceivedEventArgs.payload
+  nameWithType: OnPayloadReceivedEventArgs.payload
+- uid: VsGlobal.EventArguments.OnReconnectEventArgs
+  name: OnReconnectEventArgs
+  href: api/VsGlobal.EventArguments.OnReconnectEventArgs.html
+  commentId: T:VsGlobal.EventArguments.OnReconnectEventArgs
+  fullName: VsGlobal.EventArguments.OnReconnectEventArgs
+  nameWithType: OnReconnectEventArgs
+- uid: VsGlobal.EventArguments.OnReconnectEventArgs.attempts
+  name: attempts
+  href: api/VsGlobal.EventArguments.OnReconnectEventArgs.html#VsGlobal_EventArguments_OnReconnectEventArgs_attempts
+  commentId: F:VsGlobal.EventArguments.OnReconnectEventArgs.attempts
+  fullName: VsGlobal.EventArguments.OnReconnectEventArgs.attempts
+  nameWithType: OnReconnectEventArgs.attempts
+- uid: VsGlobal.EventArguments.OnReconnectEventArgs.module
+  name: module
+  href: api/VsGlobal.EventArguments.OnReconnectEventArgs.html#VsGlobal_EventArguments_OnReconnectEventArgs_module
+  commentId: F:VsGlobal.EventArguments.OnReconnectEventArgs.module
+  fullName: VsGlobal.EventArguments.OnReconnectEventArgs.module
+  nameWithType: OnReconnectEventArgs.module
 - uid: VsGlobal.Events
   name: Events
   href: api/VsGlobal.Events.html
@@ -74,11 +146,11 @@ references:
   commentId: E:VsGlobal.Events.OnClientReady
   fullName: VsGlobal.Events.OnClientReady
   nameWithType: Events.OnClientReady
-- uid: VsGlobal.Events.OnClientReadyHandler(VsGlobal.OnClientReadyEventArgs)
+- uid: VsGlobal.Events.OnClientReadyHandler(VsGlobal.EventArguments.OnClientReadyEventArgs)
   name: OnClientReadyHandler(OnClientReadyEventArgs)
-  href: api/VsGlobal.Events.html#VsGlobal_Events_OnClientReadyHandler_VsGlobal_OnClientReadyEventArgs_
-  commentId: M:VsGlobal.Events.OnClientReadyHandler(VsGlobal.OnClientReadyEventArgs)
-  fullName: VsGlobal.Events.OnClientReadyHandler(VsGlobal.OnClientReadyEventArgs)
+  href: api/VsGlobal.Events.html#VsGlobal_Events_OnClientReadyHandler_VsGlobal_EventArguments_OnClientReadyEventArgs_
+  commentId: M:VsGlobal.Events.OnClientReadyHandler(VsGlobal.EventArguments.OnClientReadyEventArgs)
+  fullName: VsGlobal.Events.OnClientReadyHandler(VsGlobal.EventArguments.OnClientReadyEventArgs)
   nameWithType: Events.OnClientReadyHandler(OnClientReadyEventArgs)
 - uid: VsGlobal.Events.OnClientReadyHandler*
   name: OnClientReadyHandler
@@ -93,11 +165,11 @@ references:
   commentId: E:VsGlobal.Events.OnConnect
   fullName: VsGlobal.Events.OnConnect
   nameWithType: Events.OnConnect
-- uid: VsGlobal.Events.OnConnectHandler(VsGlobal.OnConnectEventArgs)
+- uid: VsGlobal.Events.OnConnectHandler(VsGlobal.EventArguments.OnConnectEventArgs)
   name: OnConnectHandler(OnConnectEventArgs)
-  href: api/VsGlobal.Events.html#VsGlobal_Events_OnConnectHandler_VsGlobal_OnConnectEventArgs_
-  commentId: M:VsGlobal.Events.OnConnectHandler(VsGlobal.OnConnectEventArgs)
-  fullName: VsGlobal.Events.OnConnectHandler(VsGlobal.OnConnectEventArgs)
+  href: api/VsGlobal.Events.html#VsGlobal_Events_OnConnectHandler_VsGlobal_EventArguments_OnConnectEventArgs_
+  commentId: M:VsGlobal.Events.OnConnectHandler(VsGlobal.EventArguments.OnConnectEventArgs)
+  fullName: VsGlobal.Events.OnConnectHandler(VsGlobal.EventArguments.OnConnectEventArgs)
   nameWithType: Events.OnConnectHandler(OnConnectEventArgs)
 - uid: VsGlobal.Events.OnConnectHandler*
   name: OnConnectHandler
@@ -112,11 +184,11 @@ references:
   commentId: E:VsGlobal.Events.OnDisconnect
   fullName: VsGlobal.Events.OnDisconnect
   nameWithType: Events.OnDisconnect
-- uid: VsGlobal.Events.OnDisconnectHandler(VsGlobal.OnDisconnectEventArgs)
+- uid: VsGlobal.Events.OnDisconnectHandler(VsGlobal.EventArguments.OnDisconnectEventArgs)
   name: OnDisconnectHandler(OnDisconnectEventArgs)
-  href: api/VsGlobal.Events.html#VsGlobal_Events_OnDisconnectHandler_VsGlobal_OnDisconnectEventArgs_
-  commentId: M:VsGlobal.Events.OnDisconnectHandler(VsGlobal.OnDisconnectEventArgs)
-  fullName: VsGlobal.Events.OnDisconnectHandler(VsGlobal.OnDisconnectEventArgs)
+  href: api/VsGlobal.Events.html#VsGlobal_Events_OnDisconnectHandler_VsGlobal_EventArguments_OnDisconnectEventArgs_
+  commentId: M:VsGlobal.Events.OnDisconnectHandler(VsGlobal.EventArguments.OnDisconnectEventArgs)
+  fullName: VsGlobal.Events.OnDisconnectHandler(VsGlobal.EventArguments.OnDisconnectEventArgs)
   nameWithType: Events.OnDisconnectHandler(OnDisconnectEventArgs)
 - uid: VsGlobal.Events.OnDisconnectHandler*
   name: OnDisconnectHandler
@@ -131,11 +203,11 @@ references:
   commentId: E:VsGlobal.Events.OnPayloadReceived
   fullName: VsGlobal.Events.OnPayloadReceived
   nameWithType: Events.OnPayloadReceived
-- uid: VsGlobal.Events.OnPayloadReceivedHandler(VsGlobal.OnPayloadReceivedEventArgs)
+- uid: VsGlobal.Events.OnPayloadReceivedHandler(VsGlobal.EventArguments.OnPayloadReceivedEventArgs)
   name: OnPayloadReceivedHandler(OnPayloadReceivedEventArgs)
-  href: api/VsGlobal.Events.html#VsGlobal_Events_OnPayloadReceivedHandler_VsGlobal_OnPayloadReceivedEventArgs_
-  commentId: M:VsGlobal.Events.OnPayloadReceivedHandler(VsGlobal.OnPayloadReceivedEventArgs)
-  fullName: VsGlobal.Events.OnPayloadReceivedHandler(VsGlobal.OnPayloadReceivedEventArgs)
+  href: api/VsGlobal.Events.html#VsGlobal_Events_OnPayloadReceivedHandler_VsGlobal_EventArguments_OnPayloadReceivedEventArgs_
+  commentId: M:VsGlobal.Events.OnPayloadReceivedHandler(VsGlobal.EventArguments.OnPayloadReceivedEventArgs)
+  fullName: VsGlobal.Events.OnPayloadReceivedHandler(VsGlobal.EventArguments.OnPayloadReceivedEventArgs)
   nameWithType: Events.OnPayloadReceivedHandler(OnPayloadReceivedEventArgs)
 - uid: VsGlobal.Events.OnPayloadReceivedHandler*
   name: OnPayloadReceivedHandler
@@ -150,11 +222,11 @@ references:
   commentId: E:VsGlobal.Events.OnReconnect
   fullName: VsGlobal.Events.OnReconnect
   nameWithType: Events.OnReconnect
-- uid: VsGlobal.Events.OnReconnectHandler(VsGlobal.OnReconnectEventArgs)
+- uid: VsGlobal.Events.OnReconnectHandler(VsGlobal.EventArguments.OnReconnectEventArgs)
   name: OnReconnectHandler(OnReconnectEventArgs)
-  href: api/VsGlobal.Events.html#VsGlobal_Events_OnReconnectHandler_VsGlobal_OnReconnectEventArgs_
-  commentId: M:VsGlobal.Events.OnReconnectHandler(VsGlobal.OnReconnectEventArgs)
-  fullName: VsGlobal.Events.OnReconnectHandler(VsGlobal.OnReconnectEventArgs)
+  href: api/VsGlobal.Events.html#VsGlobal_Events_OnReconnectHandler_VsGlobal_EventArguments_OnReconnectEventArgs_
+  commentId: M:VsGlobal.Events.OnReconnectHandler(VsGlobal.EventArguments.OnReconnectEventArgs)
+  fullName: VsGlobal.Events.OnReconnectHandler(VsGlobal.EventArguments.OnReconnectEventArgs)
   nameWithType: Events.OnReconnectHandler(OnReconnectEventArgs)
 - uid: VsGlobal.Events.OnReconnectHandler*
   name: OnReconnectHandler
@@ -163,6 +235,42 @@ references:
   isSpec: "True"
   fullName: VsGlobal.Events.OnReconnectHandler
   nameWithType: Events.OnReconnectHandler
+- uid: VsGlobal.Handlers
+  name: VsGlobal.Handlers
+  href: api/VsGlobal.Handlers.html
+  commentId: N:VsGlobal.Handlers
+  fullName: VsGlobal.Handlers
+  nameWithType: VsGlobal.Handlers
+- uid: VsGlobal.Handlers.OnClientReadyHandler
+  name: OnClientReadyHandler
+  href: api/VsGlobal.Handlers.OnClientReadyHandler.html
+  commentId: T:VsGlobal.Handlers.OnClientReadyHandler
+  fullName: VsGlobal.Handlers.OnClientReadyHandler
+  nameWithType: OnClientReadyHandler
+- uid: VsGlobal.Handlers.OnConnectHandler
+  name: OnConnectHandler
+  href: api/VsGlobal.Handlers.OnConnectHandler.html
+  commentId: T:VsGlobal.Handlers.OnConnectHandler
+  fullName: VsGlobal.Handlers.OnConnectHandler
+  nameWithType: OnConnectHandler
+- uid: VsGlobal.Handlers.OnDisconnectHandler
+  name: OnDisconnectHandler
+  href: api/VsGlobal.Handlers.OnDisconnectHandler.html
+  commentId: T:VsGlobal.Handlers.OnDisconnectHandler
+  fullName: VsGlobal.Handlers.OnDisconnectHandler
+  nameWithType: OnDisconnectHandler
+- uid: VsGlobal.Handlers.OnPayloadReceivedHandler
+  name: OnPayloadReceivedHandler
+  href: api/VsGlobal.Handlers.OnPayloadReceivedHandler.html
+  commentId: T:VsGlobal.Handlers.OnPayloadReceivedHandler
+  fullName: VsGlobal.Handlers.OnPayloadReceivedHandler
+  nameWithType: OnPayloadReceivedHandler
+- uid: VsGlobal.Handlers.OnReconnectHandler
+  name: OnReconnectHandler
+  href: api/VsGlobal.Handlers.OnReconnectHandler.html
+  commentId: T:VsGlobal.Handlers.OnReconnectHandler
+  fullName: VsGlobal.Handlers.OnReconnectHandler
+  nameWithType: OnReconnectHandler
 - uid: VsGlobal.Network
   name: Network
   href: api/VsGlobal.Network.html
@@ -481,3 +589,149 @@ references:
   isSpec: "True"
   fullName: VsGlobal.Packets.Payload.Processed
   nameWithType: Payload.Processed
+- uid: VsGlobal.Proto
+  name: VsGlobal.Proto
+  href: api/VsGlobal.Proto.html
+  commentId: N:VsGlobal.Proto
+  fullName: VsGlobal.Proto
+  nameWithType: VsGlobal.Proto
+- uid: VsGlobal.Proto.Payload
+  name: Payload
+  href: api/VsGlobal.Proto.Payload.html
+  commentId: T:VsGlobal.Proto.Payload
+  fullName: VsGlobal.Proto.Payload
+  nameWithType: Payload
+- uid: VsGlobal.Proto.Payload.#ctor
+  name: Payload()
+  href: api/VsGlobal.Proto.Payload.html#VsGlobal_Proto_Payload__ctor
+  commentId: M:VsGlobal.Proto.Payload.#ctor
+  name.vb: New()
+  fullName: VsGlobal.Proto.Payload.Payload()
+  fullName.vb: VsGlobal.Proto.Payload.New()
+  nameWithType: Payload.Payload()
+  nameWithType.vb: Payload.New()
+- uid: VsGlobal.Proto.Payload.#ctor(System.String)
+  name: Payload(string)
+  href: api/VsGlobal.Proto.Payload.html#VsGlobal_Proto_Payload__ctor_System_String_
+  commentId: M:VsGlobal.Proto.Payload.#ctor(System.String)
+  name.vb: New(String)
+  fullName: VsGlobal.Proto.Payload.Payload(string)
+  fullName.vb: VsGlobal.Proto.Payload.New(String)
+  nameWithType: Payload.Payload(string)
+  nameWithType.vb: Payload.New(String)
+- uid: VsGlobal.Proto.Payload.#ctor*
+  name: Payload
+  href: api/VsGlobal.Proto.Payload.html#VsGlobal_Proto_Payload__ctor_
+  commentId: Overload:VsGlobal.Proto.Payload.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: VsGlobal.Proto.Payload.Payload
+  fullName.vb: VsGlobal.Proto.Payload.New
+  nameWithType: Payload.Payload
+  nameWithType.vb: Payload.New
+- uid: VsGlobal.Proto.Payload.Deserialize(System.Byte[],System.Int32)
+  name: Deserialize(byte[], int)
+  href: api/VsGlobal.Proto.Payload.html#VsGlobal_Proto_Payload_Deserialize_System_Byte___System_Int32_
+  commentId: M:VsGlobal.Proto.Payload.Deserialize(System.Byte[],System.Int32)
+  name.vb: Deserialize(Byte(), Integer)
+  fullName: VsGlobal.Proto.Payload.Deserialize(byte[], int)
+  fullName.vb: VsGlobal.Proto.Payload.Deserialize(Byte(), Integer)
+  nameWithType: Payload.Deserialize(byte[], int)
+  nameWithType.vb: Payload.Deserialize(Byte(), Integer)
+- uid: VsGlobal.Proto.Payload.Deserialize*
+  name: Deserialize
+  href: api/VsGlobal.Proto.Payload.html#VsGlobal_Proto_Payload_Deserialize_
+  commentId: Overload:VsGlobal.Proto.Payload.Deserialize
+  isSpec: "True"
+  fullName: VsGlobal.Proto.Payload.Deserialize
+  nameWithType: Payload.Deserialize
+- uid: VsGlobal.Proto.Payload.Module
+  name: Module
+  href: api/VsGlobal.Proto.Payload.html#VsGlobal_Proto_Payload_Module
+  commentId: P:VsGlobal.Proto.Payload.Module
+  fullName: VsGlobal.Proto.Payload.Module
+  nameWithType: Payload.Module
+- uid: VsGlobal.Proto.Payload.Module*
+  name: Module
+  href: api/VsGlobal.Proto.Payload.html#VsGlobal_Proto_Payload_Module_
+  commentId: Overload:VsGlobal.Proto.Payload.Module
+  isSpec: "True"
+  fullName: VsGlobal.Proto.Payload.Module
+  nameWithType: Payload.Module
+- uid: VsGlobal.Proto.Payload.PacketType
+  name: PacketType
+  href: api/VsGlobal.Proto.Payload.html#VsGlobal_Proto_Payload_PacketType
+  commentId: P:VsGlobal.Proto.Payload.PacketType
+  fullName: VsGlobal.Proto.Payload.PacketType
+  nameWithType: Payload.PacketType
+- uid: VsGlobal.Proto.Payload.PacketType*
+  name: PacketType
+  href: api/VsGlobal.Proto.Payload.html#VsGlobal_Proto_Payload_PacketType_
+  commentId: Overload:VsGlobal.Proto.Payload.PacketType
+  isSpec: "True"
+  fullName: VsGlobal.Proto.Payload.PacketType
+  nameWithType: Payload.PacketType
+- uid: VsGlobal.Proto.Payload.PacketValue
+  name: PacketValue
+  href: api/VsGlobal.Proto.Payload.html#VsGlobal_Proto_Payload_PacketValue
+  commentId: P:VsGlobal.Proto.Payload.PacketValue
+  fullName: VsGlobal.Proto.Payload.PacketValue
+  nameWithType: Payload.PacketValue
+- uid: VsGlobal.Proto.Payload.PacketValue*
+  name: PacketValue
+  href: api/VsGlobal.Proto.Payload.html#VsGlobal_Proto_Payload_PacketValue_
+  commentId: Overload:VsGlobal.Proto.Payload.PacketValue
+  isSpec: "True"
+  fullName: VsGlobal.Proto.Payload.PacketValue
+  nameWithType: Payload.PacketValue
+- uid: VsGlobal.Proto.Payload.Processed
+  name: Processed
+  href: api/VsGlobal.Proto.Payload.html#VsGlobal_Proto_Payload_Processed
+  commentId: P:VsGlobal.Proto.Payload.Processed
+  fullName: VsGlobal.Proto.Payload.Processed
+  nameWithType: Payload.Processed
+- uid: VsGlobal.Proto.Payload.Processed*
+  name: Processed
+  href: api/VsGlobal.Proto.Payload.html#VsGlobal_Proto_Payload_Processed_
+  commentId: Overload:VsGlobal.Proto.Payload.Processed
+  isSpec: "True"
+  fullName: VsGlobal.Proto.Payload.Processed
+  nameWithType: Payload.Processed
+- uid: VsGlobal.Proto.PayloadExtensionMethods
+  name: PayloadExtensionMethods
+  href: api/VsGlobal.Proto.PayloadExtensionMethods.html
+  commentId: T:VsGlobal.Proto.PayloadExtensionMethods
+  fullName: VsGlobal.Proto.PayloadExtensionMethods
+  nameWithType: PayloadExtensionMethods
+- uid: VsGlobal.Proto.PayloadExtensionMethods.DeserializePacket*
+  name: DeserializePacket
+  href: api/VsGlobal.Proto.PayloadExtensionMethods.html#VsGlobal_Proto_PayloadExtensionMethods_DeserializePacket_
+  commentId: Overload:VsGlobal.Proto.PayloadExtensionMethods.DeserializePacket
+  isSpec: "True"
+  fullName: VsGlobal.Proto.PayloadExtensionMethods.DeserializePacket
+  nameWithType: PayloadExtensionMethods.DeserializePacket
+- uid: VsGlobal.Proto.PayloadExtensionMethods.DeserializePacket``1(VsGlobal.Proto.Payload)
+  name: DeserializePacket<T>(Payload)
+  href: api/VsGlobal.Proto.PayloadExtensionMethods.html#VsGlobal_Proto_PayloadExtensionMethods_DeserializePacket__1_VsGlobal_Proto_Payload_
+  commentId: M:VsGlobal.Proto.PayloadExtensionMethods.DeserializePacket``1(VsGlobal.Proto.Payload)
+  name.vb: DeserializePacket(Of T)(Payload)
+  fullName: VsGlobal.Proto.PayloadExtensionMethods.DeserializePacket<T>(VsGlobal.Proto.Payload)
+  fullName.vb: VsGlobal.Proto.PayloadExtensionMethods.DeserializePacket(Of T)(VsGlobal.Proto.Payload)
+  nameWithType: PayloadExtensionMethods.DeserializePacket<T>(Payload)
+  nameWithType.vb: PayloadExtensionMethods.DeserializePacket(Of T)(Payload)
+- uid: VsGlobal.Proto.PayloadExtensionMethods.Serialize*
+  name: Serialize
+  href: api/VsGlobal.Proto.PayloadExtensionMethods.html#VsGlobal_Proto_PayloadExtensionMethods_Serialize_
+  commentId: Overload:VsGlobal.Proto.PayloadExtensionMethods.Serialize
+  isSpec: "True"
+  fullName: VsGlobal.Proto.PayloadExtensionMethods.Serialize
+  nameWithType: PayloadExtensionMethods.Serialize
+- uid: VsGlobal.Proto.PayloadExtensionMethods.Serialize``1(VsGlobal.Proto.Payload,``0)
+  name: Serialize<T>(Payload, T)
+  href: api/VsGlobal.Proto.PayloadExtensionMethods.html#VsGlobal_Proto_PayloadExtensionMethods_Serialize__1_VsGlobal_Proto_Payload___0_
+  commentId: M:VsGlobal.Proto.PayloadExtensionMethods.Serialize``1(VsGlobal.Proto.Payload,``0)
+  name.vb: Serialize(Of T)(Payload, T)
+  fullName: VsGlobal.Proto.PayloadExtensionMethods.Serialize<T>(VsGlobal.Proto.Payload, T)
+  fullName.vb: VsGlobal.Proto.PayloadExtensionMethods.Serialize(Of T)(VsGlobal.Proto.Payload, T)
+  nameWithType: PayloadExtensionMethods.Serialize<T>(Payload, T)
+  nameWithType.vb: PayloadExtensionMethods.Serialize(Of T)(Payload, T)
