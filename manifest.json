@@ -1,0 +1,288 @@
+{
+  "source_base_path": "/run/media/fatigue/hdd/Projects/vs_global/vs_global_docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.AuthToken.Config.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.AuthToken.Config.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.AuthToken.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.AuthToken.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.Config.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.Config.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.Events.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.Network.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.Network.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.OnClientReadyEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.OnClientReadyEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.OnClientReadyHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.OnClientReadyHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.OnConnectEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.OnConnectEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.OnConnectHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.OnConnectHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.OnDisconnectEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.OnDisconnectEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.OnDisconnectHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.OnDisconnectHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.OnPayloadReceivedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.OnPayloadReceivedEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.OnPayloadReceivedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.OnPayloadReceivedHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.OnReconnectEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.OnReconnectEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.OnReconnectHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.OnReconnectHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.Packets.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.Packets.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.Packets.Message.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.Packets.Message.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.Packets.Payload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.Packets.Payload.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.Packets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.Packets.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
