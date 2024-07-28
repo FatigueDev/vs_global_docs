@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Events | VS Global Docs ">
       
-      
+      <meta name="description" content="Events allows you to add callbacks to VsGlobal events. Using a lambda: Events.OnConnect += (e) =&amp;gt; {}; // Where e is type OnConnectEventArgs Using a function: public void MyCustomHandler(OnPayloadReceivedEventArgs e) { 	Console.WriteLine(e.payload.Module); // &quot;core&quot; } Events.OnPayloadReceived += MyCustomHandler;">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="VsGlobal_Events" data-uid="VsGlobal.Events" class="text-break">
-Class Events  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Events.cs/#L49"><i class="bi bi-code-slash"></i></a>
+Class Events  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Events.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,16 @@ Class Events  <a class="header-action link-secondary" title="View source" href="
   <dl><dt>Assembly</dt><dd>VSGlobal.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Events allows you to add callbacks to VsGlobal events.<br><example>
+Using a lambda:</example></p>
+<pre><code class="lang-csharp">Events.OnConnect += (e) =&gt; {}; // Where e is type OnConnectEventArgs</code></pre>
+<p>Using a function:</p>
+<pre><code class="lang-csharp">public void MyCustomHandler(OnPayloadReceivedEventArgs e)
+{
+	Console.WriteLine(e.payload.Module); // "core"
+}
+Events.OnPayloadReceived += MyCustomHandler;</code></pre>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -148,165 +157,6 @@ Class Events  <a class="header-action link-secondary" title="View source" href="
 
 
 
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="VsGlobal_Events_OnClientReadyHandler_" data-uid="VsGlobal.Events.OnClientReadyHandler*"></a>
-
-  <h3 id="VsGlobal_Events_OnClientReadyHandler_VsGlobal_EventArguments_OnClientReadyEventArgs_" data-uid="VsGlobal.Events.OnClientReadyHandler(VsGlobal.EventArguments.OnClientReadyEventArgs)">
-  OnClientReadyHandler(OnClientReadyEventArgs)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Events.cs/#L209"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void OnClientReadyHandler(OnClientReadyEventArgs e)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>e</code> <a class="xref" href="VsGlobal.EventArguments.OnClientReadyEventArgs.html">OnClientReadyEventArgs</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="VsGlobal_Events_OnConnectHandler_" data-uid="VsGlobal.Events.OnConnectHandler*"></a>
-
-  <h3 id="VsGlobal_Events_OnConnectHandler_VsGlobal_EventArguments_OnConnectEventArgs_" data-uid="VsGlobal.Events.OnConnectHandler(VsGlobal.EventArguments.OnConnectEventArgs)">
-  OnConnectHandler(OnConnectEventArgs)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Events.cs/#L218"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void OnConnectHandler(OnConnectEventArgs e)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>e</code> <a class="xref" href="VsGlobal.EventArguments.OnConnectEventArgs.html">OnConnectEventArgs</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="VsGlobal_Events_OnDisconnectHandler_" data-uid="VsGlobal.Events.OnDisconnectHandler*"></a>
-
-  <h3 id="VsGlobal_Events_OnDisconnectHandler_VsGlobal_EventArguments_OnDisconnectEventArgs_" data-uid="VsGlobal.Events.OnDisconnectHandler(VsGlobal.EventArguments.OnDisconnectEventArgs)">
-  OnDisconnectHandler(OnDisconnectEventArgs)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Events.cs/#L227"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void OnDisconnectHandler(OnDisconnectEventArgs e)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>e</code> <a class="xref" href="VsGlobal.EventArguments.OnDisconnectEventArgs.html">OnDisconnectEventArgs</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="VsGlobal_Events_OnPayloadReceivedHandler_" data-uid="VsGlobal.Events.OnPayloadReceivedHandler*"></a>
-
-  <h3 id="VsGlobal_Events_OnPayloadReceivedHandler_VsGlobal_EventArguments_OnPayloadReceivedEventArgs_" data-uid="VsGlobal.Events.OnPayloadReceivedHandler(VsGlobal.EventArguments.OnPayloadReceivedEventArgs)">
-  OnPayloadReceivedHandler(OnPayloadReceivedEventArgs)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Events.cs/#L245"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void OnPayloadReceivedHandler(OnPayloadReceivedEventArgs e)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>e</code> <a class="xref" href="VsGlobal.EventArguments.OnPayloadReceivedEventArgs.html">OnPayloadReceivedEventArgs</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="VsGlobal_Events_OnReconnectHandler_" data-uid="VsGlobal.Events.OnReconnectHandler*"></a>
-
-  <h3 id="VsGlobal_Events_OnReconnectHandler_VsGlobal_EventArguments_OnReconnectEventArgs_" data-uid="VsGlobal.Events.OnReconnectHandler(VsGlobal.EventArguments.OnReconnectEventArgs)">
-  OnReconnectHandler(OnReconnectEventArgs)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Events.cs/#L236"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void OnReconnectHandler(OnReconnectEventArgs e)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>e</code> <a class="xref" href="VsGlobal.EventArguments.OnReconnectEventArgs.html">OnReconnectEventArgs</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
   <h2 class="section" id="events">Events
 </h2>
 
@@ -314,20 +164,23 @@ Class Events  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="VsGlobal_Events_OnClientReady" data-uid="VsGlobal.Events.OnClientReady">
   OnClientReady
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Events.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Events.cs/#L111"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Invoked when the ICoreClientAPI.World.Player is fully loaded with <a class="xref" href="VsGlobal.EventArguments.OnClientReadyEventArgs.html">OnClientReadyEventArgs</a><example><p>Using a lambda:</p><pre><code class="lang-csharp">Events.OnClientReady += (e) =&gt;
+  <div class="markdown level1 summary"><p>Invoked when the ICoreClientAPI.World.Player is fully loaded<br><example>
+Using a lambda:</example></p>
+<pre><code class="lang-csharp">Events.OnClientReady += (e) =&gt;
 {
-e.config.api.Logger.Info(e.config.module);
-};</code></pre><p>Using a function:</p><pre><code class="lang-csharp">public void MyCoolOnClientReady(OnClientReadyEventArgs e)
+	e.config.api.Logger.Info(e.config.module);
+};</code></pre>
+<p>Using a function:</p>
+<pre><code class="lang-csharp">public void MyCoolOnClientReady(OnClientReadyEventArgs e)
 {
-// Do some stuff with e.config
-e.config.api.ShowChatMessage(e.config.player.PlayerName);
-}</code></pre></example></p>
-<pre><code>                           // Then later, in a function body somewhere we register the handler.
-                           Events.OnClientReady += MyCoolOnClientReady;&lt;/code&gt;&lt;/pre&gt;&lt;/example&gt;
-</code></pre>
+	// Do some stuff with e.config
+	e.config.api.ShowChatMessage(e.config.player.PlayerName);
+}
+// Then later, in a function body somewhere we register the handler.
+Events.OnClientReady += MyCoolOnClientReady;</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -350,31 +203,42 @@ e.config.api.ShowChatMessage(e.config.player.PlayerName);
 
 
 
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="VsGlobal.EventArguments.OnClientReadyEventArgs.html">OnClientReadyEventArgs</a></div>
+    </dd>
+  </dl>
 
 
 
   <h3 id="VsGlobal_Events_OnConnect" data-uid="VsGlobal.Events.OnConnect">
   OnConnect
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Events.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Events.cs/#L143"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Invoked when VsGlobal has connected with <a class="xref" href="VsGlobal.EventArguments.OnConnectEventArgs.html">OnConnectEventArgs</a><example><p>Using a lambda:</p><pre><code class="lang-csharp">Events.OnConnect += (e) =&gt;
+  <div class="markdown level1 summary"><p>Invoked when VsGlobal has connected
+<example>
+Using a lambda:</example></p>
+<pre><code class="lang-csharp">Events.OnConnect += (e) =&gt;
 {
-if(e.module == &quot;my_module_name&quot;)
+	if(e.module == "my_module_name")
+	{
+		// Do stuff just for our module!
+	}
+	else
+	{
+		// Do stuff for any other module!
+	}
+};</code></pre>
+<p>Using a function:</p>
+<pre><code class="lang-csharp">public void MyCoolOnConnect(OnConnectedEventArgs e)
 {
-// Do stuff just for our module!
+	// Do some stuff with e.module         
 }
-else
-{
-// Do stuff for any other module!
-}
-};</code></pre><p>Using a function:</p><pre><code class="lang-csharp">public void MyCoolOnConnect(OnConnectedEventArgs e)
-{
-// Do some stuff with e.module<br>
-}</code></pre></example></p>
-<pre><code>                           // Then later, in a function body somewhere we register the handler.
-                           Events.OnConnect += MyCoolOnConnect;&lt;/code&gt;&lt;/pre&gt;&lt;/example&gt;
-</code></pre>
+
+// Then later, in a function body somewhere we register the handler.
+Events.OnConnect += MyCoolOnConnect;</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -397,31 +261,41 @@ else
 
 
 
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="VsGlobal.EventArguments.OnConnectEventArgs.html">OnConnectEventArgs</a></div>
+    </dd>
+  </dl>
 
 
 
   <h3 id="VsGlobal_Events_OnDisconnect" data-uid="VsGlobal.Events.OnDisconnect">
   OnDisconnect
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Events.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Events.cs/#L175"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Invoked when VsGlobal has disconnected (banned, server issue, skill issue) with <a class="xref" href="VsGlobal.EventArguments.OnDisconnectEventArgs.html">OnDisconnectEventArgs</a><example><p>Using a lambda:</p><pre><code class="lang-csharp">Events.OnDisconnect += (e) =&gt;
+  <div class="markdown level1 summary"><p>Invoked when VsGlobal has disconnected (banned, server issue, skill issue)<br><example>
+Using a lambda:</example></p>
+<pre><code class="lang-csharp">Events.OnDisconnect += (e) =&gt;
 {
-if(e.module == &quot;my_module_name&quot;)
+	if(e.module == "my_module_name")
+	{
+		// Cleanup our mod code because we're DC'd.
+	}
+	else
+	{
+		// Likely don't care, but might care.
+	}
+};</code></pre>
+<p>Using a function:</p>
+<pre><code class="lang-csharp">public void MyCoolOnDisconnect(OnDisconnectEventArgs e)
 {
-// Cleanup our mod code because we're DC'd.
+	// Do some stuff with e.module         
 }
-else
-{
-// Likely don't care, but might care.
-}
-};</code></pre><p>Using a function:</p><pre><code class="lang-csharp">public void MyCoolOnDisconnect(OnDisconnectEventArgs e)
-{
-// Do some stuff with e.module<br>
-}</code></pre></example></p>
-<pre><code>                           // Then later, in a function body somewhere we register the handler.
-                           Events.OnDisconnect += MyCoolOnDisconnect;&lt;/code&gt;&lt;/pre&gt;&lt;/example&gt;
-</code></pre>
+
+// Then later, in a function body somewhere we register the handler.
+Events.OnDisconnect += MyCoolOnDisconnect;</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -444,39 +318,55 @@ else
 
 
 
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="VsGlobal.EventArguments.OnDisconnectEventArgs.html">OnDisconnectEventArgs</a></div>
+    </dd>
+  </dl>
 
 
 
   <h3 id="VsGlobal_Events_OnPayloadReceived" data-uid="VsGlobal.Events.OnPayloadReceived">
   OnPayloadReceived
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Events.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Events.cs/#L254"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Invoked when VsGlobal receives a payload with <a class="xref" href="VsGlobal.EventArguments.OnPayloadReceivedEventArgs.html">OnPayloadReceivedEventArgs</a><example><p>Using a lambda:</p><pre><code class="lang-csharp">Events.OnPayloadReceived += (e) =&gt;
+  <div class="markdown level1 summary"><p>Invoked when VsGlobal receives a payload<br><example>
+Using a lambda:</example></p>
+<pre><code class="lang-csharp">Events.OnPayloadReceived += (e) =&gt;
 {
-// This will be called whenever a packet arrives, regardless of module or sender.</code></pre></example></p>
-<pre><code>                                                                                                                                                    if(e.payload.Module == &quot;my_module_name&quot;)
-                                                                                                                                                    {
-                                                                                                                                                        // Cleanup our mod code because we're DC'd.
-                                                                                                                                                        MyCustomClass myCustomThing = e.payload.DeserializePacket&lt;MyCustomClass&gt;();
-                                                                                                                                                        Console.WriteLine(myCustomThing.whateverValueOrFunction);
-                                                                                                                                                    }
-                                                                                                                                                    else
-                                                                                                                                                    {
-                                                                                                                                                        // It's someone else's packet. Could be handy!
-                                                                                                                                                    }
-                                                                                                                                                };&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Using a function:&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;lang-csharp&quot;&gt;public void ReceiveMessagePacket(OnPayloadReceivedEventArgs e)
-                           {
-                               // Same as the lambda, we have access to any payload coming in here.
-                               Message? msg = e.payload.DeserializePacket&lt;Message&gt;();
-                               // We can also be quite cheeky and attempt to deserialize it to our custom type regardless of module.
-                               // If it doesn't, it's not ours- So I suppose that's valid as well.
-                               if(msg != null) { /* Do something with our received custom message! */}
-                           }
+	// This will be called whenever a packet arrives, regardless of module or sender.
+	if(e.payload.Module == "my_module_name")
+	{
+		// Now that we know the payload is for our module, we can try converting it to our expected types.
+		MyCustomClass? myCustomThing = e.payload.DeserializePacket&lt;MyCustomClass&gt;();
+		if(myCustomThing is MyCustomClass packet)
+		{
+			DoSomething(myCustomThing.value);
+		}
+	}
+	else
+	{
+		// It's someone else's packet. Could be handy for extension mods!
+	}
+};</code></pre>
+<p>Using a function:</p>
+<pre><code class="lang-csharp">public void ReceiveMessagePacket(OnPayloadReceivedEventArgs e)
+{
+	// Same as the lambda, we have access to any payload coming in here.
+	Message? maybeMessage = e.payload.DeserializePacket&lt;Message&gt;();
 
-                           // Then later, in a function body somewhere we register the handler.
-                           Events.OnPayloadReceived += ReceiveMessagePacket;&lt;/code&gt;&lt;/pre&gt;&lt;/example&gt;
-</code></pre>
+	// We can also be quite cheeky and attempt to deserialize it to our custom type regardless of module.
+	// If it doesn't, it's not ours- So I suppose that's valid as well.
+	if(maybeMessage is Message msg)
+	{
+		// Do something with our received custom message!
+	}
+}
+
+// Ideally, within `public override void StartClientside(ICoreClientAPI)`
+Events.OnPayloadReceived += ReceiveMessagePacket;</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -499,32 +389,42 @@ else
 
 
 
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="VsGlobal.EventArguments.OnPayloadReceivedEventArgs.html">OnPayloadReceivedEventArgs</a></div>
+    </dd>
+  </dl>
 
 
 
   <h3 id="VsGlobal_Events_OnReconnect" data-uid="VsGlobal.Events.OnReconnect">
   OnReconnect
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Events.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Events.cs/#L208"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Invoked when VsGlobal is trying to reconnect with <a class="xref" href="VsGlobal.EventArguments.OnReconnectEventArgs.html">OnReconnectEventArgs</a><example><p>Using a lambda:</p><pre><code class="lang-csharp">Events.OnReconnect += (e) =&gt;
+  <div class="markdown level1 summary"><p>Invoked when VsGlobal is trying to reconnect<br><example>
+Using a lambda:</example></p>
+<pre><code class="lang-csharp">Events.OnReconnect += (e) =&gt;
 {
-if(e.module == &quot;my_module_name&quot;)
+	if(e.module == "my_module_name")
+	{
+		// Cleanup our mod code because we're DC'd.
+		var myValue = e.attempts;
+	}
+	else
+	{
+		// Likely don't care, but might care.
+	}
+};</code></pre>
+<p>Using a function:</p>
+<pre><code class="lang-csharp">public void MyCoolOnReconnect(OnReconnectEventArgs e)
 {
-// Cleanup our mod code because we're DC'd.
-var myValue = e.attempts;
+	if(e.attempts == 3 &amp;&amp; e.module == "my_module_name") { /* Do stuff */ }
 }
-else
-{
-// Likely don't care, but might care.
-}
-};</code></pre><p>Using a function:</p><pre><code class="lang-csharp">public void MyCoolOnReconnect(OnReconnectEventArgs e)
-{
-if(e.attempts == 3 &amp;&amp; e.module == &quot;my_module_name&quot;) { /* Do stuff */ }
-}</code></pre></example></p>
-<pre><code>                           // Then later, in a function body somewhere we register the handler.
-                           Events.OnReconnect += MyCoolOnReconnect;&lt;/code&gt;&lt;/pre&gt;&lt;/example&gt;
-</code></pre>
+
+// Then later, in a function body somewhere we register the handler.
+Events.OnReconnect += MyCoolOnReconnect;</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -547,13 +447,23 @@ if(e.attempts == 3 &amp;&amp; e.module == &quot;my_module_name&quot;) { /* Do st
 
 
 
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="VsGlobal.EventArguments.OnReconnectEventArgs.html">OnReconnectEventArgs</a></div>
+    </dd>
+  </dl>
 
 
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="VsGlobal.html">VsGlobal</a>.<a class="xref" href="VsGlobal.EventArguments.html">EventArguments</a></div>
+  </div>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Events.cs/#L49" class="edit-link">Edit this page</a>
+          <a href="https://github.com/FatigueDev/vs_global/blob/main/VSGlobal/Events.cs/#L86" class="edit-link">Edit this page</a>
         </div>
 
 

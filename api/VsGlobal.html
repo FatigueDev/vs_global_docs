@@ -96,7 +96,16 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="VsGlobal.Events.html">Events</a></dt>
-      <dd></dd>
+      <dd><p>Events allows you to add callbacks to VsGlobal events.<br><example>
+Using a lambda:</example></p>
+<pre><code class="lang-csharp">Events.OnConnect += (e) =&gt; {}; // Where e is type OnConnectEventArgs</code></pre>
+<p>Using a function:</p>
+<pre><code class="lang-csharp">public void MyCustomHandler(OnPayloadReceivedEventArgs e)
+{
+	Console.WriteLine(e.payload.Module); // "core"
+}
+Events.OnPayloadReceived += MyCustomHandler;</code></pre>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="VsGlobal.Network.html">Network</a></dt>
@@ -107,7 +116,8 @@ Structs
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="VsGlobal.Config.html">Config</a></dt>
-      <dd></dd>
+      <dd><p>Contains the api, player, their auth_token and module (&quot;core&quot;).</p>
+</dd>
     </dl>
 
 

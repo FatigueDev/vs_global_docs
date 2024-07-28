@@ -182,6 +182,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/VsGlobal.NetworkInternals.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VsGlobal.NetworkInternals.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/VsGlobal.OnClientReadyEventArgs.yml",
       "output": {
         ".html": {

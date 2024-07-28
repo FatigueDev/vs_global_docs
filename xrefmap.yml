@@ -146,95 +146,30 @@ references:
   commentId: E:VsGlobal.Events.OnClientReady
   fullName: VsGlobal.Events.OnClientReady
   nameWithType: Events.OnClientReady
-- uid: VsGlobal.Events.OnClientReadyHandler(VsGlobal.EventArguments.OnClientReadyEventArgs)
-  name: OnClientReadyHandler(OnClientReadyEventArgs)
-  href: api/VsGlobal.Events.html#VsGlobal_Events_OnClientReadyHandler_VsGlobal_EventArguments_OnClientReadyEventArgs_
-  commentId: M:VsGlobal.Events.OnClientReadyHandler(VsGlobal.EventArguments.OnClientReadyEventArgs)
-  fullName: VsGlobal.Events.OnClientReadyHandler(VsGlobal.EventArguments.OnClientReadyEventArgs)
-  nameWithType: Events.OnClientReadyHandler(OnClientReadyEventArgs)
-- uid: VsGlobal.Events.OnClientReadyHandler*
-  name: OnClientReadyHandler
-  href: api/VsGlobal.Events.html#VsGlobal_Events_OnClientReadyHandler_
-  commentId: Overload:VsGlobal.Events.OnClientReadyHandler
-  isSpec: "True"
-  fullName: VsGlobal.Events.OnClientReadyHandler
-  nameWithType: Events.OnClientReadyHandler
 - uid: VsGlobal.Events.OnConnect
   name: OnConnect
   href: api/VsGlobal.Events.html#VsGlobal_Events_OnConnect
   commentId: E:VsGlobal.Events.OnConnect
   fullName: VsGlobal.Events.OnConnect
   nameWithType: Events.OnConnect
-- uid: VsGlobal.Events.OnConnectHandler(VsGlobal.EventArguments.OnConnectEventArgs)
-  name: OnConnectHandler(OnConnectEventArgs)
-  href: api/VsGlobal.Events.html#VsGlobal_Events_OnConnectHandler_VsGlobal_EventArguments_OnConnectEventArgs_
-  commentId: M:VsGlobal.Events.OnConnectHandler(VsGlobal.EventArguments.OnConnectEventArgs)
-  fullName: VsGlobal.Events.OnConnectHandler(VsGlobal.EventArguments.OnConnectEventArgs)
-  nameWithType: Events.OnConnectHandler(OnConnectEventArgs)
-- uid: VsGlobal.Events.OnConnectHandler*
-  name: OnConnectHandler
-  href: api/VsGlobal.Events.html#VsGlobal_Events_OnConnectHandler_
-  commentId: Overload:VsGlobal.Events.OnConnectHandler
-  isSpec: "True"
-  fullName: VsGlobal.Events.OnConnectHandler
-  nameWithType: Events.OnConnectHandler
 - uid: VsGlobal.Events.OnDisconnect
   name: OnDisconnect
   href: api/VsGlobal.Events.html#VsGlobal_Events_OnDisconnect
   commentId: E:VsGlobal.Events.OnDisconnect
   fullName: VsGlobal.Events.OnDisconnect
   nameWithType: Events.OnDisconnect
-- uid: VsGlobal.Events.OnDisconnectHandler(VsGlobal.EventArguments.OnDisconnectEventArgs)
-  name: OnDisconnectHandler(OnDisconnectEventArgs)
-  href: api/VsGlobal.Events.html#VsGlobal_Events_OnDisconnectHandler_VsGlobal_EventArguments_OnDisconnectEventArgs_
-  commentId: M:VsGlobal.Events.OnDisconnectHandler(VsGlobal.EventArguments.OnDisconnectEventArgs)
-  fullName: VsGlobal.Events.OnDisconnectHandler(VsGlobal.EventArguments.OnDisconnectEventArgs)
-  nameWithType: Events.OnDisconnectHandler(OnDisconnectEventArgs)
-- uid: VsGlobal.Events.OnDisconnectHandler*
-  name: OnDisconnectHandler
-  href: api/VsGlobal.Events.html#VsGlobal_Events_OnDisconnectHandler_
-  commentId: Overload:VsGlobal.Events.OnDisconnectHandler
-  isSpec: "True"
-  fullName: VsGlobal.Events.OnDisconnectHandler
-  nameWithType: Events.OnDisconnectHandler
 - uid: VsGlobal.Events.OnPayloadReceived
   name: OnPayloadReceived
   href: api/VsGlobal.Events.html#VsGlobal_Events_OnPayloadReceived
   commentId: E:VsGlobal.Events.OnPayloadReceived
   fullName: VsGlobal.Events.OnPayloadReceived
   nameWithType: Events.OnPayloadReceived
-- uid: VsGlobal.Events.OnPayloadReceivedHandler(VsGlobal.EventArguments.OnPayloadReceivedEventArgs)
-  name: OnPayloadReceivedHandler(OnPayloadReceivedEventArgs)
-  href: api/VsGlobal.Events.html#VsGlobal_Events_OnPayloadReceivedHandler_VsGlobal_EventArguments_OnPayloadReceivedEventArgs_
-  commentId: M:VsGlobal.Events.OnPayloadReceivedHandler(VsGlobal.EventArguments.OnPayloadReceivedEventArgs)
-  fullName: VsGlobal.Events.OnPayloadReceivedHandler(VsGlobal.EventArguments.OnPayloadReceivedEventArgs)
-  nameWithType: Events.OnPayloadReceivedHandler(OnPayloadReceivedEventArgs)
-- uid: VsGlobal.Events.OnPayloadReceivedHandler*
-  name: OnPayloadReceivedHandler
-  href: api/VsGlobal.Events.html#VsGlobal_Events_OnPayloadReceivedHandler_
-  commentId: Overload:VsGlobal.Events.OnPayloadReceivedHandler
-  isSpec: "True"
-  fullName: VsGlobal.Events.OnPayloadReceivedHandler
-  nameWithType: Events.OnPayloadReceivedHandler
 - uid: VsGlobal.Events.OnReconnect
   name: OnReconnect
   href: api/VsGlobal.Events.html#VsGlobal_Events_OnReconnect
   commentId: E:VsGlobal.Events.OnReconnect
   fullName: VsGlobal.Events.OnReconnect
   nameWithType: Events.OnReconnect
-- uid: VsGlobal.Events.OnReconnectHandler(VsGlobal.EventArguments.OnReconnectEventArgs)
-  name: OnReconnectHandler(OnReconnectEventArgs)
-  href: api/VsGlobal.Events.html#VsGlobal_Events_OnReconnectHandler_VsGlobal_EventArguments_OnReconnectEventArgs_
-  commentId: M:VsGlobal.Events.OnReconnectHandler(VsGlobal.EventArguments.OnReconnectEventArgs)
-  fullName: VsGlobal.Events.OnReconnectHandler(VsGlobal.EventArguments.OnReconnectEventArgs)
-  nameWithType: Events.OnReconnectHandler(OnReconnectEventArgs)
-- uid: VsGlobal.Events.OnReconnectHandler*
-  name: OnReconnectHandler
-  href: api/VsGlobal.Events.html#VsGlobal_Events_OnReconnectHandler_
-  commentId: Overload:VsGlobal.Events.OnReconnectHandler
-  isSpec: "True"
-  fullName: VsGlobal.Events.OnReconnectHandler
-  nameWithType: Events.OnReconnectHandler
 - uid: VsGlobal.Handlers
   name: VsGlobal.Handlers
   href: api/VsGlobal.Handlers.html
@@ -293,48 +228,64 @@ references:
   fullName.vb: VsGlobal.Network.Broadcast(Of T)(T, String)
   nameWithType: Network.Broadcast<T>(T, string?)
   nameWithType.vb: Network.Broadcast(Of T)(T, String)
-- uid: VsGlobal.Network.GetDefaultModule
-  name: GetDefaultModule()
-  href: api/VsGlobal.Network.html#VsGlobal_Network_GetDefaultModule
-  commentId: M:VsGlobal.Network.GetDefaultModule
-  fullName: VsGlobal.Network.GetDefaultModule()
-  nameWithType: Network.GetDefaultModule()
-- uid: VsGlobal.Network.GetDefaultModule*
-  name: GetDefaultModule
-  href: api/VsGlobal.Network.html#VsGlobal_Network_GetDefaultModule_
-  commentId: Overload:VsGlobal.Network.GetDefaultModule
+- uid: VsGlobal.NetworkInternals
+  name: NetworkInternals
+  href: api/VsGlobal.NetworkInternals.html
+  commentId: T:VsGlobal.NetworkInternals
+  fullName: VsGlobal.NetworkInternals
+  nameWithType: NetworkInternals
+- uid: VsGlobal.NetworkInternals._GetClientWebsocket
+  name: _GetClientWebsocket()
+  href: api/VsGlobal.NetworkInternals.html#VsGlobal_NetworkInternals__GetClientWebsocket
+  commentId: M:VsGlobal.NetworkInternals._GetClientWebsocket
+  fullName: VsGlobal.NetworkInternals._GetClientWebsocket()
+  nameWithType: NetworkInternals._GetClientWebsocket()
+- uid: VsGlobal.NetworkInternals._GetClientWebsocket*
+  name: _GetClientWebsocket
+  href: api/VsGlobal.NetworkInternals.html#VsGlobal_NetworkInternals__GetClientWebsocket_
+  commentId: Overload:VsGlobal.NetworkInternals._GetClientWebsocket
   isSpec: "True"
-  fullName: VsGlobal.Network.GetDefaultModule
-  nameWithType: Network.GetDefaultModule
-- uid: VsGlobal.Network.Initialize(Vintagestory.API.Client.ICoreClientAPI,System.String)
-  name: Initialize(ICoreClientAPI, string)
-  href: api/VsGlobal.Network.html#VsGlobal_Network_Initialize_Vintagestory_API_Client_ICoreClientAPI_System_String_
-  commentId: M:VsGlobal.Network.Initialize(Vintagestory.API.Client.ICoreClientAPI,System.String)
-  name.vb: Initialize(ICoreClientAPI, String)
-  fullName: VsGlobal.Network.Initialize(Vintagestory.API.Client.ICoreClientAPI, string)
-  fullName.vb: VsGlobal.Network.Initialize(Vintagestory.API.Client.ICoreClientAPI, String)
-  nameWithType: Network.Initialize(ICoreClientAPI, string)
-  nameWithType.vb: Network.Initialize(ICoreClientAPI, String)
-- uid: VsGlobal.Network.Initialize*
-  name: Initialize
-  href: api/VsGlobal.Network.html#VsGlobal_Network_Initialize_
-  commentId: Overload:VsGlobal.Network.Initialize
+  fullName: VsGlobal.NetworkInternals._GetClientWebsocket
+  nameWithType: NetworkInternals._GetClientWebsocket
+- uid: VsGlobal.NetworkInternals._GetDefaultModuleName
+  name: _GetDefaultModuleName()
+  href: api/VsGlobal.NetworkInternals.html#VsGlobal_NetworkInternals__GetDefaultModuleName
+  commentId: M:VsGlobal.NetworkInternals._GetDefaultModuleName
+  fullName: VsGlobal.NetworkInternals._GetDefaultModuleName()
+  nameWithType: NetworkInternals._GetDefaultModuleName()
+- uid: VsGlobal.NetworkInternals._GetDefaultModuleName*
+  name: _GetDefaultModuleName
+  href: api/VsGlobal.NetworkInternals.html#VsGlobal_NetworkInternals__GetDefaultModuleName_
+  commentId: Overload:VsGlobal.NetworkInternals._GetDefaultModuleName
   isSpec: "True"
-  fullName: VsGlobal.Network.Initialize
-  nameWithType: Network.Initialize
-- uid: VsGlobal.Network.SetupHandlers(Vintagestory.API.Client.ICoreClientAPI)
-  name: SetupHandlers(ICoreClientAPI)
-  href: api/VsGlobal.Network.html#VsGlobal_Network_SetupHandlers_Vintagestory_API_Client_ICoreClientAPI_
-  commentId: M:VsGlobal.Network.SetupHandlers(Vintagestory.API.Client.ICoreClientAPI)
-  fullName: VsGlobal.Network.SetupHandlers(Vintagestory.API.Client.ICoreClientAPI)
-  nameWithType: Network.SetupHandlers(ICoreClientAPI)
-- uid: VsGlobal.Network.SetupHandlers*
-  name: SetupHandlers
-  href: api/VsGlobal.Network.html#VsGlobal_Network_SetupHandlers_
-  commentId: Overload:VsGlobal.Network.SetupHandlers
+  fullName: VsGlobal.NetworkInternals._GetDefaultModuleName
+  nameWithType: NetworkInternals._GetDefaultModuleName
+- uid: VsGlobal.NetworkInternals._Initialize(Vintagestory.API.Client.ICoreClientAPI)
+  name: _Initialize(ICoreClientAPI)
+  href: api/VsGlobal.NetworkInternals.html#VsGlobal_NetworkInternals__Initialize_Vintagestory_API_Client_ICoreClientAPI_
+  commentId: M:VsGlobal.NetworkInternals._Initialize(Vintagestory.API.Client.ICoreClientAPI)
+  fullName: VsGlobal.NetworkInternals._Initialize(Vintagestory.API.Client.ICoreClientAPI)
+  nameWithType: NetworkInternals._Initialize(ICoreClientAPI)
+- uid: VsGlobal.NetworkInternals._Initialize*
+  name: _Initialize
+  href: api/VsGlobal.NetworkInternals.html#VsGlobal_NetworkInternals__Initialize_
+  commentId: Overload:VsGlobal.NetworkInternals._Initialize
   isSpec: "True"
-  fullName: VsGlobal.Network.SetupHandlers
-  nameWithType: Network.SetupHandlers
+  fullName: VsGlobal.NetworkInternals._Initialize
+  nameWithType: NetworkInternals._Initialize
+- uid: VsGlobal.NetworkInternals._SetupHandlers(Vintagestory.API.Client.ICoreClientAPI)
+  name: _SetupHandlers(ICoreClientAPI)
+  href: api/VsGlobal.NetworkInternals.html#VsGlobal_NetworkInternals__SetupHandlers_Vintagestory_API_Client_ICoreClientAPI_
+  commentId: M:VsGlobal.NetworkInternals._SetupHandlers(Vintagestory.API.Client.ICoreClientAPI)
+  fullName: VsGlobal.NetworkInternals._SetupHandlers(Vintagestory.API.Client.ICoreClientAPI)
+  nameWithType: NetworkInternals._SetupHandlers(ICoreClientAPI)
+- uid: VsGlobal.NetworkInternals._SetupHandlers*
+  name: _SetupHandlers
+  href: api/VsGlobal.NetworkInternals.html#VsGlobal_NetworkInternals__SetupHandlers_
+  commentId: Overload:VsGlobal.NetworkInternals._SetupHandlers
+  isSpec: "True"
+  fullName: VsGlobal.NetworkInternals._SetupHandlers
+  nameWithType: NetworkInternals._SetupHandlers
 - uid: VsGlobal.OnClientReadyEventArgs
   name: OnClientReadyEventArgs
   href: api/VsGlobal.OnClientReadyEventArgs.html
