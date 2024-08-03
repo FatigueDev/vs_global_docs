@@ -1,0 +1,51 @@
+### YamlMime:ManagedReference
+items:
+- uid: VsGlobal.EventArguments
+  commentId: N:VsGlobal.EventArguments
+  id: VsGlobal.EventArguments
+  children:
+  - VsGlobal.EventArguments.OnClientReadyEventArgs
+  - VsGlobal.EventArguments.OnConnectEventArgs
+  - VsGlobal.EventArguments.OnDisconnectEventArgs
+  - VsGlobal.EventArguments.OnPayloadReceivedEventArgs
+  - VsGlobal.EventArguments.OnReconnectEventArgs
+  langs:
+  - csharp
+  - vb
+  name: VsGlobal.EventArguments
+  nameWithType: VsGlobal.EventArguments
+  fullName: VsGlobal.EventArguments
+  type: Namespace
+  assemblies:
+  - VSGlobal
+references:
+- uid: VsGlobal.EventArguments.OnClientReadyEventArgs
+  commentId: T:VsGlobal.EventArguments.OnClientReadyEventArgs
+  href: VsGlobal.EventArguments.OnClientReadyEventArgs.html
+  name: OnClientReadyEventArgs
+  nameWithType: OnClientReadyEventArgs
+  fullName: VsGlobal.EventArguments.OnClientReadyEventArgs
+- uid: VsGlobal.EventArguments.OnConnectEventArgs
+  commentId: T:VsGlobal.EventArguments.OnConnectEventArgs
+  href: VsGlobal.EventArguments.OnConnectEventArgs.html
+  name: OnConnectEventArgs
+  nameWithType: OnConnectEventArgs
+  fullName: VsGlobal.EventArguments.OnConnectEventArgs
+- uid: VsGlobal.EventArguments.OnDisconnectEventArgs
+  commentId: T:VsGlobal.EventArguments.OnDisconnectEventArgs
+  href: VsGlobal.EventArguments.OnDisconnectEventArgs.html
+  name: OnDisconnectEventArgs
+  nameWithType: OnDisconnectEventArgs
+  fullName: VsGlobal.EventArguments.OnDisconnectEventArgs
+- uid: VsGlobal.EventArguments.OnReconnectEventArgs
+  commentId: T:VsGlobal.EventArguments.OnReconnectEventArgs
+  href: VsGlobal.EventArguments.OnReconnectEventArgs.html
+  name: OnReconnectEventArgs
+  nameWithType: OnReconnectEventArgs
+  fullName: VsGlobal.EventArguments.OnReconnectEventArgs
+- uid: VsGlobal.EventArguments.OnPayloadReceivedEventArgs
+  commentId: T:VsGlobal.EventArguments.OnPayloadReceivedEventArgs
+  href: VsGlobal.EventArguments.OnPayloadReceivedEventArgs.html
+  name: OnPayloadReceivedEventArgs
+  nameWithType: OnPayloadReceivedEventArgs
+  fullName: VsGlobal.EventArguments.OnPayloadReceivedEventArgs

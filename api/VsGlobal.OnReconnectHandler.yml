@@ -1,0 +1,45 @@
+### YamlMime:ManagedReference
+items:
+- uid: VsGlobal.OnReconnectHandler
+  commentId: T:VsGlobal.OnReconnectHandler
+  id: OnReconnectHandler
+  parent: VsGlobal
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: OnReconnectHandler
+  nameWithType: OnReconnectHandler
+  fullName: VsGlobal.OnReconnectHandler
+  type: Delegate
+  source:
+    remote:
+      path: VSGlobal/Events.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: OnReconnectHandler
+    path: ../VSGlobal/Events.cs
+    startLine: 8
+  assemblies:
+  - VSGlobal
+  namespace: VsGlobal
+  syntax:
+    content: public delegate void OnReconnectHandler(OnReconnectEventArgs e)
+    parameters:
+    - id: e
+      type: VsGlobal.OnReconnectEventArgs
+    content.vb: Public Delegate Sub OnReconnectHandler(e As OnReconnectEventArgs)
+references:
+- uid: VsGlobal
+  commentId: N:VsGlobal
+  href: VsGlobal.html
+  name: VsGlobal
+  nameWithType: VsGlobal
+  fullName: VsGlobal
+- uid: VsGlobal.OnReconnectEventArgs
+  commentId: T:VsGlobal.OnReconnectEventArgs
+  parent: VsGlobal
+  href: VsGlobal.OnReconnectEventArgs.html
+  name: OnReconnectEventArgs
+  nameWithType: OnReconnectEventArgs
+  fullName: VsGlobal.OnReconnectEventArgs

@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: VsGlobal
+  commentId: N:VsGlobal
+  id: VsGlobal
+  children:
+  - VsGlobal.Config
+  - VsGlobal.Events
+  - VsGlobal.Network
+  langs:
+  - csharp
+  - vb
+  name: VsGlobal
+  nameWithType: VsGlobal
+  fullName: VsGlobal
+  type: Namespace
+  assemblies:
+  - VSGlobal
+references:
+- uid: VsGlobal.Events
+  commentId: T:VsGlobal.Events
+  href: VsGlobal.Events.html
+  name: Events
+  nameWithType: Events
+  fullName: VsGlobal.Events
+- uid: VsGlobal.Network
+  commentId: T:VsGlobal.Network
+  href: VsGlobal.Network.html
+  name: Network
+  nameWithType: Network
+  fullName: VsGlobal.Network
+- uid: VsGlobal.Config
+  commentId: T:VsGlobal.Config
+  parent: VsGlobal
+  href: VsGlobal.Config.html
+  name: Config
+  nameWithType: Config
+  fullName: VsGlobal.Config
+- uid: VsGlobal
+  commentId: N:VsGlobal
+  href: VsGlobal.html
+  name: VsGlobal
+  nameWithType: VsGlobal
+  fullName: VsGlobal

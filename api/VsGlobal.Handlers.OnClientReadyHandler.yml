@@ -1,0 +1,84 @@
+### YamlMime:ManagedReference
+items:
+- uid: VsGlobal.Handlers.OnClientReadyHandler
+  commentId: T:VsGlobal.Handlers.OnClientReadyHandler
+  id: OnClientReadyHandler
+  parent: VsGlobal.Handlers
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: OnClientReadyHandler
+  nameWithType: OnClientReadyHandler
+  fullName: VsGlobal.Handlers.OnClientReadyHandler
+  type: Delegate
+  source:
+    remote:
+      path: VSGlobal/Events.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: OnClientReadyHandler
+    path: ../VSGlobal/Events.cs
+    startLine: 12
+  assemblies:
+  - VSGlobal
+  namespace: VsGlobal.Handlers
+  example: []
+  syntax:
+    content: public delegate void OnClientReadyHandler(OnClientReadyEventArgs e)
+    parameters:
+    - id: e
+      type: VsGlobal.EventArguments.OnClientReadyEventArgs
+    content.vb: Public Delegate Sub OnClientReadyHandler(e As OnClientReadyEventArgs)
+references:
+- uid: VsGlobal.Handlers
+  commentId: N:VsGlobal.Handlers
+  href: VsGlobal.html
+  name: VsGlobal.Handlers
+  nameWithType: VsGlobal.Handlers
+  fullName: VsGlobal.Handlers
+  spec.csharp:
+  - uid: VsGlobal
+    name: VsGlobal
+    href: VsGlobal.html
+  - name: .
+  - uid: VsGlobal.Handlers
+    name: Handlers
+    href: VsGlobal.Handlers.html
+  spec.vb:
+  - uid: VsGlobal
+    name: VsGlobal
+    href: VsGlobal.html
+  - name: .
+  - uid: VsGlobal.Handlers
+    name: Handlers
+    href: VsGlobal.Handlers.html
+- uid: VsGlobal.EventArguments.OnClientReadyEventArgs
+  commentId: T:VsGlobal.EventArguments.OnClientReadyEventArgs
+  parent: VsGlobal.EventArguments
+  href: VsGlobal.EventArguments.OnClientReadyEventArgs.html
+  name: OnClientReadyEventArgs
+  nameWithType: OnClientReadyEventArgs
+  fullName: VsGlobal.EventArguments.OnClientReadyEventArgs
+- uid: VsGlobal.EventArguments
+  commentId: N:VsGlobal.EventArguments
+  href: VsGlobal.html
+  name: VsGlobal.EventArguments
+  nameWithType: VsGlobal.EventArguments
+  fullName: VsGlobal.EventArguments
+  spec.csharp:
+  - uid: VsGlobal
+    name: VsGlobal
+    href: VsGlobal.html
+  - name: .
+  - uid: VsGlobal.EventArguments
+    name: EventArguments
+    href: VsGlobal.EventArguments.html
+  spec.vb:
+  - uid: VsGlobal
+    name: VsGlobal
+    href: VsGlobal.html
+  - name: .
+  - uid: VsGlobal.EventArguments
+    name: EventArguments
+    href: VsGlobal.EventArguments.html

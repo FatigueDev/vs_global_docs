@@ -1,0 +1,22 @@
+### YamlMime:TableOfContent
+items:
+- uid: VSGlobal
+  name: VSGlobal
+  items:
+  - uid: VSGlobal.Events
+    name: Events
+  - uid: VSGlobal.Network
+    name: Network
+- uid: VSGlobal.EventArguments
+  name: VSGlobal.EventArguments
+  items:
+  - uid: VSGlobal.EventArguments.OnPayloadReceivedEventArgs
+    name: OnPayloadReceivedEventArgs
+- uid: VSGlobal.Proto
+  name: VSGlobal.Proto
+  items:
+  - uid: VSGlobal.Proto.Payload
+    name: Payload
+  - uid: VSGlobal.Proto.PayloadExtensionMethods
+    name: PayloadExtensionMethods
+memberLayout: SamePage

@@ -1,0 +1,45 @@
+### YamlMime:ManagedReference
+items:
+- uid: VsGlobal.OnPayloadReceivedHandler
+  commentId: T:VsGlobal.OnPayloadReceivedHandler
+  id: OnPayloadReceivedHandler
+  parent: VsGlobal
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: OnPayloadReceivedHandler
+  nameWithType: OnPayloadReceivedHandler
+  fullName: VsGlobal.OnPayloadReceivedHandler
+  type: Delegate
+  source:
+    remote:
+      path: VSGlobal/Events.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: OnPayloadReceivedHandler
+    path: ../VSGlobal/Events.cs
+    startLine: 10
+  assemblies:
+  - VSGlobal
+  namespace: VsGlobal
+  syntax:
+    content: public delegate void OnPayloadReceivedHandler(OnPayloadReceivedEventArgs e)
+    parameters:
+    - id: e
+      type: VsGlobal.OnPayloadReceivedEventArgs
+    content.vb: Public Delegate Sub OnPayloadReceivedHandler(e As OnPayloadReceivedEventArgs)
+references:
+- uid: VsGlobal
+  commentId: N:VsGlobal
+  href: VsGlobal.html
+  name: VsGlobal
+  nameWithType: VsGlobal
+  fullName: VsGlobal
+- uid: VsGlobal.OnPayloadReceivedEventArgs
+  commentId: T:VsGlobal.OnPayloadReceivedEventArgs
+  parent: VsGlobal
+  href: VsGlobal.OnPayloadReceivedEventArgs.html
+  name: OnPayloadReceivedEventArgs
+  nameWithType: OnPayloadReceivedEventArgs
+  fullName: VsGlobal.OnPayloadReceivedEventArgs

@@ -1,0 +1,522 @@
+### YamlMime:ManagedReference
+items:
+- uid: VsGlobal.NetworkInternals
+  commentId: T:VsGlobal.NetworkInternals
+  id: NetworkInternals
+  parent: VsGlobal
+  children:
+  - VsGlobal.NetworkInternals._GetClientWebsocket
+  - VsGlobal.NetworkInternals._GetDefaultModuleName
+  - VsGlobal.NetworkInternals._Initialize(Vintagestory.API.Client.ICoreClientAPI)
+  - VsGlobal.NetworkInternals._SetupHandlers(Vintagestory.API.Client.ICoreClientAPI)
+  langs:
+  - csharp
+  - vb
+  name: NetworkInternals
+  nameWithType: NetworkInternals
+  fullName: VsGlobal.NetworkInternals
+  type: Class
+  source:
+    remote:
+      path: VSGlobal/Network.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: NetworkInternals
+    path: ../VSGlobal/Network.cs
+    startLine: 62
+  assemblies:
+  - VSGlobal
+  namespace: VsGlobal
+  example: []
+  syntax:
+    content: public static class NetworkInternals
+    content.vb: Public Module NetworkInternals
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: VsGlobal.NetworkInternals._GetClientWebsocket
+  commentId: M:VsGlobal.NetworkInternals._GetClientWebsocket
+  id: _GetClientWebsocket
+  parent: VsGlobal.NetworkInternals
+  langs:
+  - csharp
+  - vb
+  name: _GetClientWebsocket()
+  nameWithType: NetworkInternals._GetClientWebsocket()
+  fullName: VsGlobal.NetworkInternals._GetClientWebsocket()
+  type: Method
+  source:
+    remote:
+      path: VSGlobal/Network.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: _GetClientWebsocket
+    path: ../VSGlobal/Network.cs
+    startLine: 67
+  assemblies:
+  - VSGlobal
+  namespace: VsGlobal
+  example: []
+  syntax:
+    content: public static ClientWebSocket _GetClientWebsocket()
+    return:
+      type: System.Net.WebSockets.ClientWebSocket
+    content.vb: Public Shared Function _GetClientWebsocket() As ClientWebSocket
+  overload: VsGlobal.NetworkInternals._GetClientWebsocket*
+- uid: VsGlobal.NetworkInternals._Initialize(Vintagestory.API.Client.ICoreClientAPI)
+  commentId: M:VsGlobal.NetworkInternals._Initialize(Vintagestory.API.Client.ICoreClientAPI)
+  id: _Initialize(Vintagestory.API.Client.ICoreClientAPI)
+  parent: VsGlobal.NetworkInternals
+  langs:
+  - csharp
+  - vb
+  name: _Initialize(ICoreClientAPI)
+  nameWithType: NetworkInternals._Initialize(ICoreClientAPI)
+  fullName: VsGlobal.NetworkInternals._Initialize(Vintagestory.API.Client.ICoreClientAPI)
+  type: Method
+  source:
+    remote:
+      path: VSGlobal/Network.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: _Initialize
+    path: ../VSGlobal/Network.cs
+    startLine: 73
+  assemblies:
+  - VSGlobal
+  namespace: VsGlobal
+  example: []
+  syntax:
+    content: public static void _Initialize(ICoreClientAPI api)
+    parameters:
+    - id: api
+      type: Vintagestory.API.Client.ICoreClientAPI
+    content.vb: Public Shared Sub _Initialize(api As ICoreClientAPI)
+  overload: VsGlobal.NetworkInternals._Initialize*
+- uid: VsGlobal.NetworkInternals._SetupHandlers(Vintagestory.API.Client.ICoreClientAPI)
+  commentId: M:VsGlobal.NetworkInternals._SetupHandlers(Vintagestory.API.Client.ICoreClientAPI)
+  id: _SetupHandlers(Vintagestory.API.Client.ICoreClientAPI)
+  parent: VsGlobal.NetworkInternals
+  langs:
+  - csharp
+  - vb
+  name: _SetupHandlers(ICoreClientAPI)
+  nameWithType: NetworkInternals._SetupHandlers(ICoreClientAPI)
+  fullName: VsGlobal.NetworkInternals._SetupHandlers(Vintagestory.API.Client.ICoreClientAPI)
+  type: Method
+  source:
+    remote:
+      path: VSGlobal/Network.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: _SetupHandlers
+    path: ../VSGlobal/Network.cs
+    startLine: 106
+  assemblies:
+  - VSGlobal
+  namespace: VsGlobal
+  example: []
+  syntax:
+    content: public static void _SetupHandlers(ICoreClientAPI api)
+    parameters:
+    - id: api
+      type: Vintagestory.API.Client.ICoreClientAPI
+    content.vb: Public Shared Sub _SetupHandlers(api As ICoreClientAPI)
+  overload: VsGlobal.NetworkInternals._SetupHandlers*
+- uid: VsGlobal.NetworkInternals._GetDefaultModuleName
+  commentId: M:VsGlobal.NetworkInternals._GetDefaultModuleName
+  id: _GetDefaultModuleName
+  parent: VsGlobal.NetworkInternals
+  langs:
+  - csharp
+  - vb
+  name: _GetDefaultModuleName()
+  nameWithType: NetworkInternals._GetDefaultModuleName()
+  fullName: VsGlobal.NetworkInternals._GetDefaultModuleName()
+  type: Method
+  source:
+    remote:
+      path: VSGlobal/Network.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: _GetDefaultModuleName
+    path: ../VSGlobal/Network.cs
+    startLine: 165
+  assemblies:
+  - VSGlobal
+  namespace: VsGlobal
+  example: []
+  syntax:
+    content: public static string _GetDefaultModuleName()
+    return:
+      type: System.String
+    content.vb: Public Shared Function _GetDefaultModuleName() As String
+  overload: VsGlobal.NetworkInternals._GetDefaultModuleName*
+references:
+- uid: VsGlobal
+  commentId: N:VsGlobal
+  href: VsGlobal.html
+  name: VsGlobal
+  nameWithType: VsGlobal
+  fullName: VsGlobal
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VsGlobal.NetworkInternals._GetClientWebsocket*
+  commentId: Overload:VsGlobal.NetworkInternals._GetClientWebsocket
+  href: VsGlobal.NetworkInternals.html#VsGlobal_NetworkInternals__GetClientWebsocket
+  name: _GetClientWebsocket
+  nameWithType: NetworkInternals._GetClientWebsocket
+  fullName: VsGlobal.NetworkInternals._GetClientWebsocket
+- uid: System.Net.WebSockets.ClientWebSocket
+  commentId: T:System.Net.WebSockets.ClientWebSocket
+  parent: System.Net.WebSockets
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.websockets.clientwebsocket
+  name: ClientWebSocket
+  nameWithType: ClientWebSocket
+  fullName: System.Net.WebSockets.ClientWebSocket
+- uid: System.Net.WebSockets
+  commentId: N:System.Net.WebSockets
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net.WebSockets
+  nameWithType: System.Net.WebSockets
+  fullName: System.Net.WebSockets
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.WebSockets
+    name: WebSockets
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.websockets
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.WebSockets
+    name: WebSockets
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.websockets
+- uid: VsGlobal.NetworkInternals._Initialize*
+  commentId: Overload:VsGlobal.NetworkInternals._Initialize
+  href: VsGlobal.NetworkInternals.html#VsGlobal_NetworkInternals__Initialize_Vintagestory_API_Client_ICoreClientAPI_
+  name: _Initialize
+  nameWithType: NetworkInternals._Initialize
+  fullName: VsGlobal.NetworkInternals._Initialize
+- uid: Vintagestory.API.Client.ICoreClientAPI
+  commentId: T:Vintagestory.API.Client.ICoreClientAPI
+  parent: Vintagestory.API.Client
+  isExternal: true
+  name: ICoreClientAPI
+  nameWithType: ICoreClientAPI
+  fullName: Vintagestory.API.Client.ICoreClientAPI
+- uid: Vintagestory.API.Client
+  commentId: N:Vintagestory.API.Client
+  isExternal: true
+  name: Vintagestory.API.Client
+  nameWithType: Vintagestory.API.Client
+  fullName: Vintagestory.API.Client
+  spec.csharp:
+  - uid: Vintagestory
+    name: Vintagestory
+    isExternal: true
+  - name: .
+  - uid: Vintagestory.API
+    name: API
+    isExternal: true
+  - name: .
+  - uid: Vintagestory.API.Client
+    name: Client
+    isExternal: true
+  spec.vb:
+  - uid: Vintagestory
+    name: Vintagestory
+    isExternal: true
+  - name: .
+  - uid: Vintagestory.API
+    name: API
+    isExternal: true
+  - name: .
+  - uid: Vintagestory.API.Client
+    name: Client
+    isExternal: true
+- uid: VsGlobal.NetworkInternals._SetupHandlers*
+  commentId: Overload:VsGlobal.NetworkInternals._SetupHandlers
+  href: VsGlobal.NetworkInternals.html#VsGlobal_NetworkInternals__SetupHandlers_Vintagestory_API_Client_ICoreClientAPI_
+  name: _SetupHandlers
+  nameWithType: NetworkInternals._SetupHandlers
+  fullName: VsGlobal.NetworkInternals._SetupHandlers
+- uid: VsGlobal.NetworkInternals._GetDefaultModuleName*
+  commentId: Overload:VsGlobal.NetworkInternals._GetDefaultModuleName
+  href: VsGlobal.NetworkInternals.html#VsGlobal_NetworkInternals__GetDefaultModuleName
+  name: _GetDefaultModuleName
+  nameWithType: NetworkInternals._GetDefaultModuleName
+  fullName: VsGlobal.NetworkInternals._GetDefaultModuleName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

@@ -1,0 +1,45 @@
+### YamlMime:ManagedReference
+items:
+- uid: VsGlobal.OnClientReadyHandler
+  commentId: T:VsGlobal.OnClientReadyHandler
+  id: OnClientReadyHandler
+  parent: VsGlobal
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: OnClientReadyHandler
+  nameWithType: OnClientReadyHandler
+  fullName: VsGlobal.OnClientReadyHandler
+  type: Delegate
+  source:
+    remote:
+      path: VSGlobal/Events.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: OnClientReadyHandler
+    path: ../VSGlobal/Events.cs
+    startLine: 5
+  assemblies:
+  - VSGlobal
+  namespace: VsGlobal
+  syntax:
+    content: public delegate void OnClientReadyHandler(OnClientReadyEventArgs e)
+    parameters:
+    - id: e
+      type: VsGlobal.OnClientReadyEventArgs
+    content.vb: Public Delegate Sub OnClientReadyHandler(e As OnClientReadyEventArgs)
+references:
+- uid: VsGlobal
+  commentId: N:VsGlobal
+  href: VsGlobal.html
+  name: VsGlobal
+  nameWithType: VsGlobal
+  fullName: VsGlobal
+- uid: VsGlobal.OnClientReadyEventArgs
+  commentId: T:VsGlobal.OnClientReadyEventArgs
+  parent: VsGlobal
+  href: VsGlobal.OnClientReadyEventArgs.html
+  name: OnClientReadyEventArgs
+  nameWithType: OnClientReadyEventArgs
+  fullName: VsGlobal.OnClientReadyEventArgs

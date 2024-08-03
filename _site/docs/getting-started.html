@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Getting Started | VS Global Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Getting Started | VS Global Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="VS Global Docs">
+            VS Global Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="getting-started">Getting Started</h1>
+
+<h2 id="installation---wip-">Installation - WIP :^)</h2>
+<ul>
+<li>Download and install the VSGlobal mod from the ModDB.</li>
+<li>Add the following package reference to your .csproj file and make sure it is exclude it from the build process.</li>
+</ul>
+<pre><code class="lang-xml">&lt;PackageReference Include=&quot;VSGlobal&quot; Version=&quot;1.0.0&quot;&gt;
+    &lt;Private&gt;true&lt;/Private&gt;
+    &lt;PrivateAssets&gt;all&lt;/PrivateAssets&gt;
+&lt;/PackageReference&gt;
+</code></pre>
+<h3 id="once-thats-done-youre-ready-to-work-with-the-vsglobal-api-heres-an-example-of-what-a-simple-mod-may-look-like">Once that's done, you're ready to work with the VSGlobal API. Here's an example of what a simple mod may look like:</h3>
+<pre><code class="lang-csharp">public class MyModSystem : ModSystem
+{   
+    string channel = &quot;my_string_channel&quot;;
+
+    public override void StartClientSide(ICoreClientAPI api)
+    {
+        // Add our custom payload handler that is called whenever we receive a packet.
+        // We can even say `+= async (e)` here and await a long running task.
+        Events.OnPayloadReceived += (e) =&gt;
+        {
+            if (e.payload.Module == channel)
+            {
+                string message = e.payload.DeserializePacket&lt;string&gt;() ?? &quot;VSG: Couldn't parse message!&quot;;
+                Console.WriteLine(message);
+                // If we wanted to do anything in the game though, we'll need to be on the main thread!
+                api.Events.EnqueueMainThreadTask(() =&gt; api.ShowChatMessage($&quot;Received a payload: {message}&quot;), &quot;MTT_MyModPayloadReceived&quot;);
+            }
+        };
+        
+        // Add our custom event for when VSGlobal connects (VSGlobal loads at level 0)
+        Events.OnConnect += async (args) =&gt; 
+        {
+            await Network.Subscribe(channel);
+            // I'm sure this can be made async but.... Time is not a luxury I have.
+            this.api.Event.OnSendChatMessage += MyChatMessageHandler;
+        };
+
+        base.StartClientSide(this.api);
+    }
+    
+    private void MyChatMessageHandler(int groupId, ref string message, ref EnumHandling handled)
+    {
+        // All this can be called `async` and is awaitable. I highly recommend you do this to enhance performance.
+        Task.Run(async () =&gt; await Network.Broadcast($&quot;Message from VSGlobal's server! - {threadedMessage}&quot;, channel));
+        // handled = EnumHandling.PreventSubsequent; // If we wanted to brick all native functionality and just test, this would be the way to do it.
+    }
+}
+</code></pre>
+<p>Keep in mind, we can replace giving it a string value for any type we'd like to send. We can send native Vintage Story Protobuf packets, we can send structs, classes and potentially even functions/tasks we can invoke once it's received.</p>
+<pre><code class="lang-csharp">// Sending large data is possible, but not entirely recommended. Bigger packets, bigger cost. Keep it simple if possible.
+Broadcast(api.World.Player, &quot;my_channel&quot;) //&gt; OnPayloadReceived - e.payload.DeserializePacket&lt;IPlayer&gt;() == Their player.
+
+// Untested use case but probably possible.
+Broadcast(EnumThingo.Grundle, &quot;my_channel&quot;) //&gt; OnPayloadReceived - e.payload.DeserializePacket&lt;EnumThingo&gt;() == EnumThingo.Grundle
+
+// Untested use case but probably possible.
+Broadcast(()=&gt;{ return &quot;Someone test this for me, please! - Lila&quot;; }, &quot;my_channel&quot;); //&gt; OnPayloadReceived - e.payload.DeserializePacket&lt;??????&gt;().Invoke();
+// The list goes on. It's generic; go apeshit.
+</code></pre>
+<h3 id="now-youre-familiar-with-the-basics-you-can-look-into-the-detailed-api-docs"><a href="/api/VsGlobal.html">Now you're familiar with the basics, you can look into the detailed API docs!</a></h3>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

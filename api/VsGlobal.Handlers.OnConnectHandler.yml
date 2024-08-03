@@ -1,0 +1,84 @@
+### YamlMime:ManagedReference
+items:
+- uid: VsGlobal.Handlers.OnConnectHandler
+  commentId: T:VsGlobal.Handlers.OnConnectHandler
+  id: OnConnectHandler
+  parent: VsGlobal.Handlers
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: OnConnectHandler
+  nameWithType: OnConnectHandler
+  fullName: VsGlobal.Handlers.OnConnectHandler
+  type: Delegate
+  source:
+    remote:
+      path: VSGlobal/Events.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: OnConnectHandler
+    path: ../VSGlobal/Events.cs
+    startLine: 14
+  assemblies:
+  - VSGlobal
+  namespace: VsGlobal.Handlers
+  example: []
+  syntax:
+    content: public delegate void OnConnectHandler(OnConnectEventArgs e)
+    parameters:
+    - id: e
+      type: VsGlobal.EventArguments.OnConnectEventArgs
+    content.vb: Public Delegate Sub OnConnectHandler(e As OnConnectEventArgs)
+references:
+- uid: VsGlobal.Handlers
+  commentId: N:VsGlobal.Handlers
+  href: VsGlobal.html
+  name: VsGlobal.Handlers
+  nameWithType: VsGlobal.Handlers
+  fullName: VsGlobal.Handlers
+  spec.csharp:
+  - uid: VsGlobal
+    name: VsGlobal
+    href: VsGlobal.html
+  - name: .
+  - uid: VsGlobal.Handlers
+    name: Handlers
+    href: VsGlobal.Handlers.html
+  spec.vb:
+  - uid: VsGlobal
+    name: VsGlobal
+    href: VsGlobal.html
+  - name: .
+  - uid: VsGlobal.Handlers
+    name: Handlers
+    href: VsGlobal.Handlers.html
+- uid: VsGlobal.EventArguments.OnConnectEventArgs
+  commentId: T:VsGlobal.EventArguments.OnConnectEventArgs
+  parent: VsGlobal.EventArguments
+  href: VsGlobal.EventArguments.OnConnectEventArgs.html
+  name: OnConnectEventArgs
+  nameWithType: OnConnectEventArgs
+  fullName: VsGlobal.EventArguments.OnConnectEventArgs
+- uid: VsGlobal.EventArguments
+  commentId: N:VsGlobal.EventArguments
+  href: VsGlobal.html
+  name: VsGlobal.EventArguments
+  nameWithType: VsGlobal.EventArguments
+  fullName: VsGlobal.EventArguments
+  spec.csharp:
+  - uid: VsGlobal
+    name: VsGlobal
+    href: VsGlobal.html
+  - name: .
+  - uid: VsGlobal.EventArguments
+    name: EventArguments
+    href: VsGlobal.EventArguments.html
+  spec.vb:
+  - uid: VsGlobal
+    name: VsGlobal
+    href: VsGlobal.html
+  - name: .
+  - uid: VsGlobal.EventArguments
+    name: EventArguments
+    href: VsGlobal.EventArguments.html

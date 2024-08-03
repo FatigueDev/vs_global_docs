@@ -1,0 +1,45 @@
+### YamlMime:ManagedReference
+items:
+- uid: VsGlobal.OnDisconnectHandler
+  commentId: T:VsGlobal.OnDisconnectHandler
+  id: OnDisconnectHandler
+  parent: VsGlobal
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: OnDisconnectHandler
+  nameWithType: OnDisconnectHandler
+  fullName: VsGlobal.OnDisconnectHandler
+  type: Delegate
+  source:
+    remote:
+      path: VSGlobal/Events.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: OnDisconnectHandler
+    path: ../VSGlobal/Events.cs
+    startLine: 7
+  assemblies:
+  - VSGlobal
+  namespace: VsGlobal
+  syntax:
+    content: public delegate void OnDisconnectHandler(OnDisconnectEventArgs e)
+    parameters:
+    - id: e
+      type: VsGlobal.OnDisconnectEventArgs
+    content.vb: Public Delegate Sub OnDisconnectHandler(e As OnDisconnectEventArgs)
+references:
+- uid: VsGlobal
+  commentId: N:VsGlobal
+  href: VsGlobal.html
+  name: VsGlobal
+  nameWithType: VsGlobal
+  fullName: VsGlobal
+- uid: VsGlobal.OnDisconnectEventArgs
+  commentId: T:VsGlobal.OnDisconnectEventArgs
+  parent: VsGlobal
+  href: VsGlobal.OnDisconnectEventArgs.html
+  name: OnDisconnectEventArgs
+  nameWithType: OnDisconnectEventArgs
+  fullName: VsGlobal.OnDisconnectEventArgs

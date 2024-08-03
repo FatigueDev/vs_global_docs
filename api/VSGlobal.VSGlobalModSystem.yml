@@ -1,0 +1,707 @@
+### YamlMime:ManagedReference
+items:
+- uid: VSGlobal.VSGlobalModSystem
+  commentId: T:VSGlobal.VSGlobalModSystem
+  id: VSGlobalModSystem
+  parent: VSGlobal
+  children:
+  - VSGlobal.VSGlobalModSystem.ExecuteOrder
+  - VSGlobal.VSGlobalModSystem.StartClientSide(Vintagestory.API.Client.ICoreClientAPI)
+  langs:
+  - csharp
+  - vb
+  name: VSGlobalModSystem
+  nameWithType: VSGlobalModSystem
+  fullName: VSGlobal.VSGlobalModSystem
+  type: Class
+  source:
+    remote:
+      path: VSGlobal/VSGlobalModSystem.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: VSGlobalModSystem
+    path: ../VSGlobal/VSGlobalModSystem.cs
+    startLine: 15
+  assemblies:
+  - VSGlobal
+  namespace: VSGlobal
+  syntax:
+    content: 'public class VSGlobalModSystem : ModSystem'
+    content.vb: Public Class VSGlobalModSystem Inherits ModSystem
+  inheritance:
+  - System.Object
+  - Vintagestory.API.Common.ModSystem
+  inheritedMembers:
+  - Vintagestory.API.Common.ModSystem.ShouldLoad(Vintagestory.API.Common.EnumAppSide)
+  - Vintagestory.API.Common.ModSystem.StartPre(Vintagestory.API.Common.ICoreAPI)
+  - Vintagestory.API.Common.ModSystem.Start(Vintagestory.API.Common.ICoreAPI)
+  - Vintagestory.API.Common.ModSystem.AssetsLoaded(Vintagestory.API.Common.ICoreAPI)
+  - Vintagestory.API.Common.ModSystem.AssetsFinalize(Vintagestory.API.Common.ICoreAPI)
+  - Vintagestory.API.Common.ModSystem.StartServerSide(Vintagestory.API.Server.ICoreServerAPI)
+  - Vintagestory.API.Common.ModSystem.Dispose
+  - Vintagestory.API.Common.ModSystem.Mod
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: VSGlobal.VSGlobalModSystem.ExecuteOrder
+  commentId: M:VSGlobal.VSGlobalModSystem.ExecuteOrder
+  id: ExecuteOrder
+  parent: VSGlobal.VSGlobalModSystem
+  langs:
+  - csharp
+  - vb
+  name: ExecuteOrder()
+  nameWithType: VSGlobalModSystem.ExecuteOrder()
+  fullName: VSGlobal.VSGlobalModSystem.ExecuteOrder()
+  type: Method
+  source:
+    remote:
+      path: VSGlobal/VSGlobalModSystem.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: ExecuteOrder
+    path: ../VSGlobal/VSGlobalModSystem.cs
+    startLine: 17
+  assemblies:
+  - VSGlobal
+  namespace: VSGlobal
+  summary: >-
+    If you need mods to be executed in a certain order, adjust this methods return value.<br />
+
+    The server will call each Mods StartPre() and Start() methods in ascending order of each mods execute order value. And thus, as long as every mod registers it's event handlers in the Start() method, all event handlers will be called in the same execution order.<br />
+
+    Default execute order of some survival mod parts<br />
+
+    Worldgen:<br />
+
+    - GenTerra: 0 <br />
+
+    - RockStrata: 0.1<br />
+
+    - Deposits: 0.2<br />
+
+    - Caves: 0.3<br />
+
+    - Blocklayers: 0.4<br />
+
+    AssetsLoaded event<br />
+
+    - JsonPatch loader: 0.05<br />
+
+    - Load hardcoded mantle block: 0.1<br />
+
+    - Block and Item Loader: 0.2<br />
+
+    - Recipes (Smithing, Knapping, Clayforming, Grid recipes, Alloys) Loader: 1<br />
+  example: []
+  syntax:
+    content: public override double ExecuteOrder()
+    return:
+      type: System.Double
+      description: ''
+    content.vb: Public Overrides Function ExecuteOrder() As Double
+  overridden: Vintagestory.API.Common.ModSystem.ExecuteOrder
+  overload: VSGlobal.VSGlobalModSystem.ExecuteOrder*
+- uid: VSGlobal.VSGlobalModSystem.StartClientSide(Vintagestory.API.Client.ICoreClientAPI)
+  commentId: M:VSGlobal.VSGlobalModSystem.StartClientSide(Vintagestory.API.Client.ICoreClientAPI)
+  id: StartClientSide(Vintagestory.API.Client.ICoreClientAPI)
+  parent: VSGlobal.VSGlobalModSystem
+  langs:
+  - csharp
+  - vb
+  name: StartClientSide(ICoreClientAPI)
+  nameWithType: VSGlobalModSystem.StartClientSide(ICoreClientAPI)
+  fullName: VSGlobal.VSGlobalModSystem.StartClientSide(Vintagestory.API.Client.ICoreClientAPI)
+  type: Method
+  source:
+    remote:
+      path: VSGlobal/VSGlobalModSystem.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: StartClientSide
+    path: ../VSGlobal/VSGlobalModSystem.cs
+    startLine: 22
+  assemblies:
+  - VSGlobal
+  namespace: VSGlobal
+  summary: >-
+    Full start to the mod on the client side.
+
+    <br />Note, in multiplayer games, the server assets (blocks, items, entities, recipes) have not yet been received and so no blocks etc. are yet registered
+
+    <br />For code that must run only after we have blocks, items, entities and recipes all registered and loaded, add your method to event BlockTexturesLoaded
+  example: []
+  syntax:
+    content: public override void StartClientSide(ICoreClientAPI api)
+    parameters:
+    - id: api
+      type: Vintagestory.API.Client.ICoreClientAPI
+      description: ''
+    content.vb: Public Overrides Sub StartClientSide(api As ICoreClientAPI)
+  overridden: Vintagestory.API.Common.ModSystem.StartClientSide(Vintagestory.API.Client.ICoreClientAPI)
+  overload: VSGlobal.VSGlobalModSystem.StartClientSide*
+references:
+- uid: VSGlobal
+  commentId: N:VSGlobal
+  href: VSGlobal.html
+  name: VSGlobal
+  nameWithType: VSGlobal
+  fullName: VSGlobal
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Vintagestory.API.Common.ModSystem
+  commentId: T:Vintagestory.API.Common.ModSystem
+  parent: Vintagestory.API.Common
+  isExternal: true
+  name: ModSystem
+  nameWithType: ModSystem
+  fullName: Vintagestory.API.Common.ModSystem
+- uid: Vintagestory.API.Common.ModSystem.ShouldLoad(Vintagestory.API.Common.EnumAppSide)
+  commentId: M:Vintagestory.API.Common.ModSystem.ShouldLoad(Vintagestory.API.Common.EnumAppSide)
+  parent: Vintagestory.API.Common.ModSystem
+  isExternal: true
+  name: ShouldLoad(EnumAppSide)
+  nameWithType: ModSystem.ShouldLoad(EnumAppSide)
+  fullName: Vintagestory.API.Common.ModSystem.ShouldLoad(Vintagestory.API.Common.EnumAppSide)
+  spec.csharp:
+  - uid: Vintagestory.API.Common.ModSystem.ShouldLoad(Vintagestory.API.Common.EnumAppSide)
+    name: ShouldLoad
+    isExternal: true
+  - name: (
+  - uid: Vintagestory.API.Common.EnumAppSide
+    name: EnumAppSide
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Vintagestory.API.Common.ModSystem.ShouldLoad(Vintagestory.API.Common.EnumAppSide)
+    name: ShouldLoad
+    isExternal: true
+  - name: (
+  - uid: Vintagestory.API.Common.EnumAppSide
+    name: EnumAppSide
+    isExternal: true
+  - name: )
+- uid: Vintagestory.API.Common.ModSystem.StartPre(Vintagestory.API.Common.ICoreAPI)
+  commentId: M:Vintagestory.API.Common.ModSystem.StartPre(Vintagestory.API.Common.ICoreAPI)
+  parent: Vintagestory.API.Common.ModSystem
+  isExternal: true
+  name: StartPre(ICoreAPI)
+  nameWithType: ModSystem.StartPre(ICoreAPI)
+  fullName: Vintagestory.API.Common.ModSystem.StartPre(Vintagestory.API.Common.ICoreAPI)
+  spec.csharp:
+  - uid: Vintagestory.API.Common.ModSystem.StartPre(Vintagestory.API.Common.ICoreAPI)
+    name: StartPre
+    isExternal: true
+  - name: (
+  - uid: Vintagestory.API.Common.ICoreAPI
+    name: ICoreAPI
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Vintagestory.API.Common.ModSystem.StartPre(Vintagestory.API.Common.ICoreAPI)
+    name: StartPre
+    isExternal: true
+  - name: (
+  - uid: Vintagestory.API.Common.ICoreAPI
+    name: ICoreAPI
+    isExternal: true
+  - name: )
+- uid: Vintagestory.API.Common.ModSystem.Start(Vintagestory.API.Common.ICoreAPI)
+  commentId: M:Vintagestory.API.Common.ModSystem.Start(Vintagestory.API.Common.ICoreAPI)
+  parent: Vintagestory.API.Common.ModSystem
+  isExternal: true
+  name: Start(ICoreAPI)
+  nameWithType: ModSystem.Start(ICoreAPI)
+  fullName: Vintagestory.API.Common.ModSystem.Start(Vintagestory.API.Common.ICoreAPI)
+  spec.csharp:
+  - uid: Vintagestory.API.Common.ModSystem.Start(Vintagestory.API.Common.ICoreAPI)
+    name: Start
+    isExternal: true
+  - name: (
+  - uid: Vintagestory.API.Common.ICoreAPI
+    name: ICoreAPI
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Vintagestory.API.Common.ModSystem.Start(Vintagestory.API.Common.ICoreAPI)
+    name: Start
+    isExternal: true
+  - name: (
+  - uid: Vintagestory.API.Common.ICoreAPI
+    name: ICoreAPI
+    isExternal: true
+  - name: )
+- uid: Vintagestory.API.Common.ModSystem.AssetsLoaded(Vintagestory.API.Common.ICoreAPI)
+  commentId: M:Vintagestory.API.Common.ModSystem.AssetsLoaded(Vintagestory.API.Common.ICoreAPI)
+  parent: Vintagestory.API.Common.ModSystem
+  isExternal: true
+  name: AssetsLoaded(ICoreAPI)
+  nameWithType: ModSystem.AssetsLoaded(ICoreAPI)
+  fullName: Vintagestory.API.Common.ModSystem.AssetsLoaded(Vintagestory.API.Common.ICoreAPI)
+  spec.csharp:
+  - uid: Vintagestory.API.Common.ModSystem.AssetsLoaded(Vintagestory.API.Common.ICoreAPI)
+    name: AssetsLoaded
+    isExternal: true
+  - name: (
+  - uid: Vintagestory.API.Common.ICoreAPI
+    name: ICoreAPI
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Vintagestory.API.Common.ModSystem.AssetsLoaded(Vintagestory.API.Common.ICoreAPI)
+    name: AssetsLoaded
+    isExternal: true
+  - name: (
+  - uid: Vintagestory.API.Common.ICoreAPI
+    name: ICoreAPI
+    isExternal: true
+  - name: )
+- uid: Vintagestory.API.Common.ModSystem.AssetsFinalize(Vintagestory.API.Common.ICoreAPI)
+  commentId: M:Vintagestory.API.Common.ModSystem.AssetsFinalize(Vintagestory.API.Common.ICoreAPI)
+  parent: Vintagestory.API.Common.ModSystem
+  isExternal: true
+  name: AssetsFinalize(ICoreAPI)
+  nameWithType: ModSystem.AssetsFinalize(ICoreAPI)
+  fullName: Vintagestory.API.Common.ModSystem.AssetsFinalize(Vintagestory.API.Common.ICoreAPI)
+  spec.csharp:
+  - uid: Vintagestory.API.Common.ModSystem.AssetsFinalize(Vintagestory.API.Common.ICoreAPI)
+    name: AssetsFinalize
+    isExternal: true
+  - name: (
+  - uid: Vintagestory.API.Common.ICoreAPI
+    name: ICoreAPI
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Vintagestory.API.Common.ModSystem.AssetsFinalize(Vintagestory.API.Common.ICoreAPI)
+    name: AssetsFinalize
+    isExternal: true
+  - name: (
+  - uid: Vintagestory.API.Common.ICoreAPI
+    name: ICoreAPI
+    isExternal: true
+  - name: )
+- uid: Vintagestory.API.Common.ModSystem.StartServerSide(Vintagestory.API.Server.ICoreServerAPI)
+  commentId: M:Vintagestory.API.Common.ModSystem.StartServerSide(Vintagestory.API.Server.ICoreServerAPI)
+  parent: Vintagestory.API.Common.ModSystem
+  isExternal: true
+  name: StartServerSide(ICoreServerAPI)
+  nameWithType: ModSystem.StartServerSide(ICoreServerAPI)
+  fullName: Vintagestory.API.Common.ModSystem.StartServerSide(Vintagestory.API.Server.ICoreServerAPI)
+  spec.csharp:
+  - uid: Vintagestory.API.Common.ModSystem.StartServerSide(Vintagestory.API.Server.ICoreServerAPI)
+    name: StartServerSide
+    isExternal: true
+  - name: (
+  - uid: Vintagestory.API.Server.ICoreServerAPI
+    name: ICoreServerAPI
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Vintagestory.API.Common.ModSystem.StartServerSide(Vintagestory.API.Server.ICoreServerAPI)
+    name: StartServerSide
+    isExternal: true
+  - name: (
+  - uid: Vintagestory.API.Server.ICoreServerAPI
+    name: ICoreServerAPI
+    isExternal: true
+  - name: )
+- uid: Vintagestory.API.Common.ModSystem.Dispose
+  commentId: M:Vintagestory.API.Common.ModSystem.Dispose
+  parent: Vintagestory.API.Common.ModSystem
+  isExternal: true
+  name: Dispose()
+  nameWithType: ModSystem.Dispose()
+  fullName: Vintagestory.API.Common.ModSystem.Dispose()
+  spec.csharp:
+  - uid: Vintagestory.API.Common.ModSystem.Dispose
+    name: Dispose
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Vintagestory.API.Common.ModSystem.Dispose
+    name: Dispose
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Vintagestory.API.Common.ModSystem.Mod
+  commentId: P:Vintagestory.API.Common.ModSystem.Mod
+  parent: Vintagestory.API.Common.ModSystem
+  isExternal: true
+  name: Mod
+  nameWithType: ModSystem.Mod
+  fullName: Vintagestory.API.Common.ModSystem.Mod
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Vintagestory.API.Common
+  commentId: N:Vintagestory.API.Common
+  isExternal: true
+  name: Vintagestory.API.Common
+  nameWithType: Vintagestory.API.Common
+  fullName: Vintagestory.API.Common
+  spec.csharp:
+  - uid: Vintagestory
+    name: Vintagestory
+    isExternal: true
+  - name: .
+  - uid: Vintagestory.API
+    name: API
+    isExternal: true
+  - name: .
+  - uid: Vintagestory.API.Common
+    name: Common
+    isExternal: true
+  spec.vb:
+  - uid: Vintagestory
+    name: Vintagestory
+    isExternal: true
+  - name: .
+  - uid: Vintagestory.API
+    name: API
+    isExternal: true
+  - name: .
+  - uid: Vintagestory.API.Common
+    name: Common
+    isExternal: true
+- uid: Vintagestory.API.Common.ModSystem.ExecuteOrder
+  commentId: M:Vintagestory.API.Common.ModSystem.ExecuteOrder
+  parent: Vintagestory.API.Common.ModSystem
+  isExternal: true
+  name: ExecuteOrder()
+  nameWithType: ModSystem.ExecuteOrder()
+  fullName: Vintagestory.API.Common.ModSystem.ExecuteOrder()
+  spec.csharp:
+  - uid: Vintagestory.API.Common.ModSystem.ExecuteOrder
+    name: ExecuteOrder
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Vintagestory.API.Common.ModSystem.ExecuteOrder
+    name: ExecuteOrder
+    isExternal: true
+  - name: (
+  - name: )
+- uid: VSGlobal.VSGlobalModSystem.ExecuteOrder*
+  commentId: Overload:VSGlobal.VSGlobalModSystem.ExecuteOrder
+  href: VSGlobal.VSGlobalModSystem.html#VSGlobal_VSGlobalModSystem_ExecuteOrder
+  name: ExecuteOrder
+  nameWithType: VSGlobalModSystem.ExecuteOrder
+  fullName: VSGlobal.VSGlobalModSystem.ExecuteOrder
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Vintagestory.API.Common.ModSystem.StartClientSide(Vintagestory.API.Client.ICoreClientAPI)
+  commentId: M:Vintagestory.API.Common.ModSystem.StartClientSide(Vintagestory.API.Client.ICoreClientAPI)
+  parent: Vintagestory.API.Common.ModSystem
+  isExternal: true
+  name: StartClientSide(ICoreClientAPI)
+  nameWithType: ModSystem.StartClientSide(ICoreClientAPI)
+  fullName: Vintagestory.API.Common.ModSystem.StartClientSide(Vintagestory.API.Client.ICoreClientAPI)
+  spec.csharp:
+  - uid: Vintagestory.API.Common.ModSystem.StartClientSide(Vintagestory.API.Client.ICoreClientAPI)
+    name: StartClientSide
+    isExternal: true
+  - name: (
+  - uid: Vintagestory.API.Client.ICoreClientAPI
+    name: ICoreClientAPI
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Vintagestory.API.Common.ModSystem.StartClientSide(Vintagestory.API.Client.ICoreClientAPI)
+    name: StartClientSide
+    isExternal: true
+  - name: (
+  - uid: Vintagestory.API.Client.ICoreClientAPI
+    name: ICoreClientAPI
+    isExternal: true
+  - name: )
+- uid: VSGlobal.VSGlobalModSystem.StartClientSide*
+  commentId: Overload:VSGlobal.VSGlobalModSystem.StartClientSide
+  href: VSGlobal.VSGlobalModSystem.html#VSGlobal_VSGlobalModSystem_StartClientSide_Vintagestory_API_Client_ICoreClientAPI_
+  name: StartClientSide
+  nameWithType: VSGlobalModSystem.StartClientSide
+  fullName: VSGlobal.VSGlobalModSystem.StartClientSide
+- uid: Vintagestory.API.Client.ICoreClientAPI
+  commentId: T:Vintagestory.API.Client.ICoreClientAPI
+  parent: Vintagestory.API.Client
+  isExternal: true
+  name: ICoreClientAPI
+  nameWithType: ICoreClientAPI
+  fullName: Vintagestory.API.Client.ICoreClientAPI
+- uid: Vintagestory.API.Client
+  commentId: N:Vintagestory.API.Client
+  isExternal: true
+  name: Vintagestory.API.Client
+  nameWithType: Vintagestory.API.Client
+  fullName: Vintagestory.API.Client
+  spec.csharp:
+  - uid: Vintagestory
+    name: Vintagestory
+    isExternal: true
+  - name: .
+  - uid: Vintagestory.API
+    name: API
+    isExternal: true
+  - name: .
+  - uid: Vintagestory.API.Client
+    name: Client
+    isExternal: true
+  spec.vb:
+  - uid: Vintagestory
+    name: Vintagestory
+    isExternal: true
+  - name: .
+  - uid: Vintagestory.API
+    name: API
+    isExternal: true
+  - name: .
+  - uid: Vintagestory.API.Client
+    name: Client
+    isExternal: true

@@ -1,0 +1,919 @@
+### YamlMime:ManagedReference
+items:
+- uid: VSGlobal.Proto.Payload
+  commentId: T:VSGlobal.Proto.Payload
+  id: Payload
+  parent: VSGlobal.Proto
+  children:
+  - VSGlobal.Proto.Payload.#ctor
+  - VSGlobal.Proto.Payload.#ctor(System.String)
+  - VSGlobal.Proto.Payload.#ctor(System.String,System.String)
+  - VSGlobal.Proto.Payload.Deserialize(System.Byte[],System.Int32)
+  - VSGlobal.Proto.Payload.Event
+  - VSGlobal.Proto.Payload.Module
+  - VSGlobal.Proto.Payload.PacketType
+  - VSGlobal.Proto.Payload.PacketValue
+  langs:
+  - csharp
+  - vb
+  name: Payload
+  nameWithType: Payload
+  fullName: VSGlobal.Proto.Payload
+  type: Class
+  source:
+    remote:
+      path: VSGlobal/proto/_Payload.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: Payload
+    path: ../VSGlobal/proto/_Payload.cs
+    startLine: 7
+  assemblies:
+  - VSGlobal
+  namespace: VSGlobal.Proto
+  syntax:
+    content: >-
+      [ProtoContract]
+
+      public class Payload
+    content.vb: >-
+      <ProtoContract>
+
+      Public Class Payload
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - VSGlobal.Proto.Payload.VSGlobal.Proto.PayloadExtensionMethods.DeserializePacket``1
+  - VSGlobal.Proto.Payload.VSGlobal.Proto.PayloadExtensionMethods.Serialize
+  - VSGlobal.Proto.Payload.VSGlobal.Proto.PayloadExtensionMethods.Serialize``1({T})
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
+- uid: VSGlobal.Proto.Payload.Module
+  commentId: P:VSGlobal.Proto.Payload.Module
+  id: Module
+  parent: VSGlobal.Proto.Payload
+  langs:
+  - csharp
+  - vb
+  name: Module
+  nameWithType: Payload.Module
+  fullName: VSGlobal.Proto.Payload.Module
+  type: Property
+  source:
+    remote:
+      path: VSGlobal/proto/_Payload.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: Module
+    path: ../VSGlobal/proto/_Payload.cs
+    startLine: 10
+  assemblies:
+  - VSGlobal
+  namespace: VSGlobal.Proto
+  syntax:
+    content: >-
+      [ProtoMember(1)]
+
+      public string Module { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Property [Module] As String
+  overload: VSGlobal.Proto.Payload.Module*
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
+- uid: VSGlobal.Proto.Payload.Event
+  commentId: P:VSGlobal.Proto.Payload.Event
+  id: Event
+  parent: VSGlobal.Proto.Payload
+  langs:
+  - csharp
+  - vb
+  name: Event
+  nameWithType: Payload.Event
+  fullName: VSGlobal.Proto.Payload.Event
+  type: Property
+  source:
+    remote:
+      path: VSGlobal/proto/_Payload.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: Event
+    path: ../VSGlobal/proto/_Payload.cs
+    startLine: 14
+  assemblies:
+  - VSGlobal
+  namespace: VSGlobal.Proto
+  syntax:
+    content: >-
+      [ProtoMember(2)]
+
+      public string Event { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Property [Event] As String
+  overload: VSGlobal.Proto.Payload.Event*
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
+- uid: VSGlobal.Proto.Payload.PacketType
+  commentId: P:VSGlobal.Proto.Payload.PacketType
+  id: PacketType
+  parent: VSGlobal.Proto.Payload
+  langs:
+  - csharp
+  - vb
+  name: PacketType
+  nameWithType: Payload.PacketType
+  fullName: VSGlobal.Proto.Payload.PacketType
+  type: Property
+  source:
+    remote:
+      path: VSGlobal/proto/_Payload.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: PacketType
+    path: ../VSGlobal/proto/_Payload.cs
+    startLine: 18
+  assemblies:
+  - VSGlobal
+  namespace: VSGlobal.Proto
+  syntax:
+    content: >-
+      [ProtoMember(3)]
+
+      public string PacketType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <ProtoMember(3)>
+
+      Public Property PacketType As String
+  overload: VSGlobal.Proto.Payload.PacketType*
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
+- uid: VSGlobal.Proto.Payload.PacketValue
+  commentId: P:VSGlobal.Proto.Payload.PacketValue
+  id: PacketValue
+  parent: VSGlobal.Proto.Payload
+  langs:
+  - csharp
+  - vb
+  name: PacketValue
+  nameWithType: Payload.PacketValue
+  fullName: VSGlobal.Proto.Payload.PacketValue
+  type: Property
+  source:
+    remote:
+      path: VSGlobal/proto/_Payload.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: PacketValue
+    path: ../VSGlobal/proto/_Payload.cs
+    startLine: 22
+  assemblies:
+  - VSGlobal
+  namespace: VSGlobal.Proto
+  syntax:
+    content: >-
+      [ProtoMember(4)]
+
+      public byte[] PacketValue { get; set; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: >-
+      <ProtoMember(4)>
+
+      Public Property PacketValue As Byte()
+  overload: VSGlobal.Proto.Payload.PacketValue*
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 4
+- uid: VSGlobal.Proto.Payload.#ctor
+  commentId: M:VSGlobal.Proto.Payload.#ctor
+  id: '#ctor'
+  parent: VSGlobal.Proto.Payload
+  langs:
+  - csharp
+  - vb
+  name: Payload()
+  nameWithType: Payload.Payload()
+  fullName: VSGlobal.Proto.Payload.Payload()
+  type: Constructor
+  source:
+    remote:
+      path: VSGlobal/proto/_Payload.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: .ctor
+    path: ../VSGlobal/proto/_Payload.cs
+    startLine: 25
+  assemblies:
+  - VSGlobal
+  namespace: VSGlobal.Proto
+  syntax:
+    content: public Payload()
+    content.vb: Public Sub New()
+  overload: VSGlobal.Proto.Payload.#ctor*
+  nameWithType.vb: Payload.New()
+  fullName.vb: VSGlobal.Proto.Payload.New()
+  name.vb: New()
+- uid: VSGlobal.Proto.Payload.#ctor(System.String)
+  commentId: M:VSGlobal.Proto.Payload.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: VSGlobal.Proto.Payload
+  langs:
+  - csharp
+  - vb
+  name: Payload(string)
+  nameWithType: Payload.Payload(string)
+  fullName: VSGlobal.Proto.Payload.Payload(string)
+  type: Constructor
+  source:
+    remote:
+      path: VSGlobal/proto/_Payload.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: .ctor
+    path: ../VSGlobal/proto/_Payload.cs
+    startLine: 26
+  assemblies:
+  - VSGlobal
+  namespace: VSGlobal.Proto
+  syntax:
+    content: public Payload(string triggerEvent)
+    parameters:
+    - id: triggerEvent
+      type: System.String
+    content.vb: Public Sub New(triggerEvent As String)
+  overload: VSGlobal.Proto.Payload.#ctor*
+  nameWithType.vb: Payload.New(String)
+  fullName.vb: VSGlobal.Proto.Payload.New(String)
+  name.vb: New(String)
+- uid: VSGlobal.Proto.Payload.#ctor(System.String,System.String)
+  commentId: M:VSGlobal.Proto.Payload.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: VSGlobal.Proto.Payload
+  langs:
+  - csharp
+  - vb
+  name: Payload(string, string)
+  nameWithType: Payload.Payload(string, string)
+  fullName: VSGlobal.Proto.Payload.Payload(string, string)
+  type: Constructor
+  source:
+    remote:
+      path: VSGlobal/proto/_Payload.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: .ctor
+    path: ../VSGlobal/proto/_Payload.cs
+    startLine: 27
+  assemblies:
+  - VSGlobal
+  namespace: VSGlobal.Proto
+  syntax:
+    content: public Payload(string triggerEvent, string module)
+    parameters:
+    - id: triggerEvent
+      type: System.String
+    - id: module
+      type: System.String
+    content.vb: Public Sub New(triggerEvent As String, [module] As String)
+  overload: VSGlobal.Proto.Payload.#ctor*
+  nameWithType.vb: Payload.New(String, String)
+  fullName.vb: VSGlobal.Proto.Payload.New(String, String)
+  name.vb: New(String, String)
+- uid: VSGlobal.Proto.Payload.Deserialize(System.Byte[],System.Int32)
+  commentId: M:VSGlobal.Proto.Payload.Deserialize(System.Byte[],System.Int32)
+  id: Deserialize(System.Byte[],System.Int32)
+  parent: VSGlobal.Proto.Payload
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(byte[], int)
+  nameWithType: Payload.Deserialize(byte[], int)
+  fullName: VSGlobal.Proto.Payload.Deserialize(byte[], int)
+  type: Method
+  source:
+    remote:
+      path: VSGlobal/proto/_Payload.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: Deserialize
+    path: ../VSGlobal/proto/_Payload.cs
+    startLine: 29
+  assemblies:
+  - VSGlobal
+  namespace: VSGlobal.Proto
+  syntax:
+    content: public static Payload Deserialize(byte[] buffer, int responseSize)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+    - id: responseSize
+      type: System.Int32
+    return:
+      type: VSGlobal.Proto.Payload
+    content.vb: Public Shared Function Deserialize(buffer As Byte(), responseSize As Integer) As Payload
+  overload: VSGlobal.Proto.Payload.Deserialize*
+  nameWithType.vb: Payload.Deserialize(Byte(), Integer)
+  fullName.vb: VSGlobal.Proto.Payload.Deserialize(Byte(), Integer)
+  name.vb: Deserialize(Byte(), Integer)
+references:
+- uid: VSGlobal.Proto
+  commentId: N:VSGlobal.Proto
+  href: VSGlobal.html
+  name: VSGlobal.Proto
+  nameWithType: VSGlobal.Proto
+  fullName: VSGlobal.Proto
+  spec.csharp:
+  - uid: VSGlobal
+    name: VSGlobal
+    href: VSGlobal.html
+  - name: .
+  - uid: VSGlobal.Proto
+    name: Proto
+    href: VSGlobal.Proto.html
+  spec.vb:
+  - uid: VSGlobal
+    name: VSGlobal
+    href: VSGlobal.html
+  - name: .
+  - uid: VSGlobal.Proto
+    name: Proto
+    href: VSGlobal.Proto.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: VSGlobal.Proto.Payload.VSGlobal.Proto.PayloadExtensionMethods.DeserializePacket``1
+  commentId: M:VSGlobal.Proto.PayloadExtensionMethods.DeserializePacket``1(VSGlobal.Proto.Payload)
+  parent: VSGlobal.Proto.PayloadExtensionMethods
+  definition: VSGlobal.Proto.PayloadExtensionMethods.DeserializePacket``1(VSGlobal.Proto.Payload)
+  href: VSGlobal.Proto.PayloadExtensionMethods.html#VSGlobal_Proto_PayloadExtensionMethods_DeserializePacket__1_VSGlobal_Proto_Payload_
+  name: DeserializePacket<T>(Payload)
+  nameWithType: PayloadExtensionMethods.DeserializePacket<T>(Payload)
+  fullName: VSGlobal.Proto.PayloadExtensionMethods.DeserializePacket<T>(VSGlobal.Proto.Payload)
+  nameWithType.vb: PayloadExtensionMethods.DeserializePacket(Of T)(Payload)
+  fullName.vb: VSGlobal.Proto.PayloadExtensionMethods.DeserializePacket(Of T)(VSGlobal.Proto.Payload)
+  name.vb: DeserializePacket(Of T)(Payload)
+  spec.csharp:
+  - uid: VSGlobal.Proto.PayloadExtensionMethods.DeserializePacket``1(VSGlobal.Proto.Payload)
+    name: DeserializePacket
+    href: VSGlobal.Proto.PayloadExtensionMethods.html#VSGlobal_Proto_PayloadExtensionMethods_DeserializePacket__1_VSGlobal_Proto_Payload_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: VSGlobal.Proto.Payload
+    name: Payload
+    href: VSGlobal.Proto.Payload.html
+  - name: )
+  spec.vb:
+  - uid: VSGlobal.Proto.PayloadExtensionMethods.DeserializePacket``1(VSGlobal.Proto.Payload)
+    name: DeserializePacket
+    href: VSGlobal.Proto.PayloadExtensionMethods.html#VSGlobal_Proto_PayloadExtensionMethods_DeserializePacket__1_VSGlobal_Proto_Payload_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: VSGlobal.Proto.Payload
+    name: Payload
+    href: VSGlobal.Proto.Payload.html
+  - name: )
+- uid: VSGlobal.Proto.Payload.VSGlobal.Proto.PayloadExtensionMethods.Serialize
+  commentId: M:VSGlobal.Proto.PayloadExtensionMethods.Serialize(VSGlobal.Proto.Payload)
+  parent: VSGlobal.Proto.PayloadExtensionMethods
+  definition: VSGlobal.Proto.PayloadExtensionMethods.Serialize(VSGlobal.Proto.Payload)
+  href: VSGlobal.Proto.PayloadExtensionMethods.html#VSGlobal_Proto_PayloadExtensionMethods_Serialize_VSGlobal_Proto_Payload_
+  name: Serialize(Payload)
+  nameWithType: PayloadExtensionMethods.Serialize(Payload)
+  fullName: VSGlobal.Proto.PayloadExtensionMethods.Serialize(VSGlobal.Proto.Payload)
+  spec.csharp:
+  - uid: VSGlobal.Proto.PayloadExtensionMethods.Serialize(VSGlobal.Proto.Payload)
+    name: Serialize
+    href: VSGlobal.Proto.PayloadExtensionMethods.html#VSGlobal_Proto_PayloadExtensionMethods_Serialize_VSGlobal_Proto_Payload_
+  - name: (
+  - uid: VSGlobal.Proto.Payload
+    name: Payload
+    href: VSGlobal.Proto.Payload.html
+  - name: )
+  spec.vb:
+  - uid: VSGlobal.Proto.PayloadExtensionMethods.Serialize(VSGlobal.Proto.Payload)
+    name: Serialize
+    href: VSGlobal.Proto.PayloadExtensionMethods.html#VSGlobal_Proto_PayloadExtensionMethods_Serialize_VSGlobal_Proto_Payload_
+  - name: (
+  - uid: VSGlobal.Proto.Payload
+    name: Payload
+    href: VSGlobal.Proto.Payload.html
+  - name: )
+- uid: VSGlobal.Proto.Payload.VSGlobal.Proto.PayloadExtensionMethods.Serialize``1({T})
+  commentId: M:VSGlobal.Proto.PayloadExtensionMethods.Serialize``1(VSGlobal.Proto.Payload,``0)
+  parent: VSGlobal.Proto.PayloadExtensionMethods
+  definition: VSGlobal.Proto.PayloadExtensionMethods.Serialize``1(VSGlobal.Proto.Payload,``0)
+  href: VSGlobal.Proto.PayloadExtensionMethods.html#VSGlobal_Proto_PayloadExtensionMethods_Serialize__1_VSGlobal_Proto_Payload___0_
+  name: Serialize<T>(Payload, T)
+  nameWithType: PayloadExtensionMethods.Serialize<T>(Payload, T)
+  fullName: VSGlobal.Proto.PayloadExtensionMethods.Serialize<T>(VSGlobal.Proto.Payload, T)
+  nameWithType.vb: PayloadExtensionMethods.Serialize(Of T)(Payload, T)
+  fullName.vb: VSGlobal.Proto.PayloadExtensionMethods.Serialize(Of T)(VSGlobal.Proto.Payload, T)
+  name.vb: Serialize(Of T)(Payload, T)
+  spec.csharp:
+  - uid: VSGlobal.Proto.PayloadExtensionMethods.Serialize``1(VSGlobal.Proto.Payload,``0)
+    name: Serialize
+    href: VSGlobal.Proto.PayloadExtensionMethods.html#VSGlobal_Proto_PayloadExtensionMethods_Serialize__1_VSGlobal_Proto_Payload___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: VSGlobal.Proto.Payload
+    name: Payload
+    href: VSGlobal.Proto.Payload.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: VSGlobal.Proto.PayloadExtensionMethods.Serialize``1(VSGlobal.Proto.Payload,``0)
+    name: Serialize
+    href: VSGlobal.Proto.PayloadExtensionMethods.html#VSGlobal_Proto_PayloadExtensionMethods_Serialize__1_VSGlobal_Proto_Payload___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: VSGlobal.Proto.Payload
+    name: Payload
+    href: VSGlobal.Proto.Payload.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VSGlobal.Proto.PayloadExtensionMethods.DeserializePacket``1(VSGlobal.Proto.Payload)
+  commentId: M:VSGlobal.Proto.PayloadExtensionMethods.DeserializePacket``1(VSGlobal.Proto.Payload)
+  href: VSGlobal.Proto.PayloadExtensionMethods.html#VSGlobal_Proto_PayloadExtensionMethods_DeserializePacket__1_VSGlobal_Proto_Payload_
+  name: DeserializePacket<T>(Payload)
+  nameWithType: PayloadExtensionMethods.DeserializePacket<T>(Payload)
+  fullName: VSGlobal.Proto.PayloadExtensionMethods.DeserializePacket<T>(VSGlobal.Proto.Payload)
+  nameWithType.vb: PayloadExtensionMethods.DeserializePacket(Of T)(Payload)
+  fullName.vb: VSGlobal.Proto.PayloadExtensionMethods.DeserializePacket(Of T)(VSGlobal.Proto.Payload)
+  name.vb: DeserializePacket(Of T)(Payload)
+  spec.csharp:
+  - uid: VSGlobal.Proto.PayloadExtensionMethods.DeserializePacket``1(VSGlobal.Proto.Payload)
+    name: DeserializePacket
+    href: VSGlobal.Proto.PayloadExtensionMethods.html#VSGlobal_Proto_PayloadExtensionMethods_DeserializePacket__1_VSGlobal_Proto_Payload_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: VSGlobal.Proto.Payload
+    name: Payload
+    href: VSGlobal.Proto.Payload.html
+  - name: )
+  spec.vb:
+  - uid: VSGlobal.Proto.PayloadExtensionMethods.DeserializePacket``1(VSGlobal.Proto.Payload)
+    name: DeserializePacket
+    href: VSGlobal.Proto.PayloadExtensionMethods.html#VSGlobal_Proto_PayloadExtensionMethods_DeserializePacket__1_VSGlobal_Proto_Payload_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: VSGlobal.Proto.Payload
+    name: Payload
+    href: VSGlobal.Proto.Payload.html
+  - name: )
+- uid: VSGlobal.Proto.PayloadExtensionMethods
+  commentId: T:VSGlobal.Proto.PayloadExtensionMethods
+  parent: VSGlobal.Proto
+  href: VSGlobal.Proto.PayloadExtensionMethods.html
+  name: PayloadExtensionMethods
+  nameWithType: PayloadExtensionMethods
+  fullName: VSGlobal.Proto.PayloadExtensionMethods
+- uid: VSGlobal.Proto.PayloadExtensionMethods.Serialize(VSGlobal.Proto.Payload)
+  commentId: M:VSGlobal.Proto.PayloadExtensionMethods.Serialize(VSGlobal.Proto.Payload)
+  href: VSGlobal.Proto.PayloadExtensionMethods.html#VSGlobal_Proto_PayloadExtensionMethods_Serialize_VSGlobal_Proto_Payload_
+  name: Serialize(Payload)
+  nameWithType: PayloadExtensionMethods.Serialize(Payload)
+  fullName: VSGlobal.Proto.PayloadExtensionMethods.Serialize(VSGlobal.Proto.Payload)
+  spec.csharp:
+  - uid: VSGlobal.Proto.PayloadExtensionMethods.Serialize(VSGlobal.Proto.Payload)
+    name: Serialize
+    href: VSGlobal.Proto.PayloadExtensionMethods.html#VSGlobal_Proto_PayloadExtensionMethods_Serialize_VSGlobal_Proto_Payload_
+  - name: (
+  - uid: VSGlobal.Proto.Payload
+    name: Payload
+    href: VSGlobal.Proto.Payload.html
+  - name: )
+  spec.vb:
+  - uid: VSGlobal.Proto.PayloadExtensionMethods.Serialize(VSGlobal.Proto.Payload)
+    name: Serialize
+    href: VSGlobal.Proto.PayloadExtensionMethods.html#VSGlobal_Proto_PayloadExtensionMethods_Serialize_VSGlobal_Proto_Payload_
+  - name: (
+  - uid: VSGlobal.Proto.Payload
+    name: Payload
+    href: VSGlobal.Proto.Payload.html
+  - name: )
+- uid: VSGlobal.Proto.PayloadExtensionMethods.Serialize``1(VSGlobal.Proto.Payload,``0)
+  commentId: M:VSGlobal.Proto.PayloadExtensionMethods.Serialize``1(VSGlobal.Proto.Payload,``0)
+  href: VSGlobal.Proto.PayloadExtensionMethods.html#VSGlobal_Proto_PayloadExtensionMethods_Serialize__1_VSGlobal_Proto_Payload___0_
+  name: Serialize<T>(Payload, T)
+  nameWithType: PayloadExtensionMethods.Serialize<T>(Payload, T)
+  fullName: VSGlobal.Proto.PayloadExtensionMethods.Serialize<T>(VSGlobal.Proto.Payload, T)
+  nameWithType.vb: PayloadExtensionMethods.Serialize(Of T)(Payload, T)
+  fullName.vb: VSGlobal.Proto.PayloadExtensionMethods.Serialize(Of T)(VSGlobal.Proto.Payload, T)
+  name.vb: Serialize(Of T)(Payload, T)
+  spec.csharp:
+  - uid: VSGlobal.Proto.PayloadExtensionMethods.Serialize``1(VSGlobal.Proto.Payload,``0)
+    name: Serialize
+    href: VSGlobal.Proto.PayloadExtensionMethods.html#VSGlobal_Proto_PayloadExtensionMethods_Serialize__1_VSGlobal_Proto_Payload___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: VSGlobal.Proto.Payload
+    name: Payload
+    href: VSGlobal.Proto.Payload.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: VSGlobal.Proto.PayloadExtensionMethods.Serialize``1(VSGlobal.Proto.Payload,``0)
+    name: Serialize
+    href: VSGlobal.Proto.PayloadExtensionMethods.html#VSGlobal_Proto_PayloadExtensionMethods_Serialize__1_VSGlobal_Proto_Payload___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: VSGlobal.Proto.Payload
+    name: Payload
+    href: VSGlobal.Proto.Payload.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: VSGlobal.Proto.Payload.Module*
+  commentId: Overload:VSGlobal.Proto.Payload.Module
+  href: VSGlobal.Proto.Payload.html#VSGlobal_Proto_Payload_Module
+  name: Module
+  nameWithType: Payload.Module
+  fullName: VSGlobal.Proto.Payload.Module
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: VSGlobal.Proto.Payload.Event*
+  commentId: Overload:VSGlobal.Proto.Payload.Event
+  href: VSGlobal.Proto.Payload.html#VSGlobal_Proto_Payload_Event
+  name: Event
+  nameWithType: Payload.Event
+  fullName: VSGlobal.Proto.Payload.Event
+- uid: VSGlobal.Proto.Payload.PacketType*
+  commentId: Overload:VSGlobal.Proto.Payload.PacketType
+  href: VSGlobal.Proto.Payload.html#VSGlobal_Proto_Payload_PacketType
+  name: PacketType
+  nameWithType: Payload.PacketType
+  fullName: VSGlobal.Proto.Payload.PacketType
+- uid: VSGlobal.Proto.Payload.PacketValue*
+  commentId: Overload:VSGlobal.Proto.Payload.PacketValue
+  href: VSGlobal.Proto.Payload.html#VSGlobal_Proto_Payload_PacketValue
+  name: PacketValue
+  nameWithType: Payload.PacketValue
+  fullName: VSGlobal.Proto.Payload.PacketValue
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: VSGlobal.Proto.Payload.#ctor*
+  commentId: Overload:VSGlobal.Proto.Payload.#ctor
+  href: VSGlobal.Proto.Payload.html#VSGlobal_Proto_Payload__ctor
+  name: Payload
+  nameWithType: Payload.Payload
+  fullName: VSGlobal.Proto.Payload.Payload
+  nameWithType.vb: Payload.New
+  fullName.vb: VSGlobal.Proto.Payload.New
+  name.vb: New
+- uid: VSGlobal.Proto.Payload.Deserialize*
+  commentId: Overload:VSGlobal.Proto.Payload.Deserialize
+  href: VSGlobal.Proto.Payload.html#VSGlobal_Proto_Payload_Deserialize_System_Byte___System_Int32_
+  name: Deserialize
+  nameWithType: Payload.Deserialize
+  fullName: VSGlobal.Proto.Payload.Deserialize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: VSGlobal.Proto.Payload
+  commentId: T:VSGlobal.Proto.Payload
+  parent: VSGlobal.Proto
+  href: VSGlobal.Proto.Payload.html
+  name: Payload
+  nameWithType: Payload
+  fullName: VSGlobal.Proto.Payload

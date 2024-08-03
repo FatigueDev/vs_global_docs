@@ -1,0 +1,78 @@
+### YamlMime:ManagedReference
+items:
+- uid: VsGlobal.Handlers
+  commentId: N:VsGlobal.Handlers
+  id: VsGlobal.Handlers
+  children:
+  - VsGlobal.Handlers.OnClientReadyHandler
+  - VsGlobal.Handlers.OnConnectHandler
+  - VsGlobal.Handlers.OnDisconnectHandler
+  - VsGlobal.Handlers.OnPayloadReceivedHandler
+  - VsGlobal.Handlers.OnReconnectHandler
+  langs:
+  - csharp
+  - vb
+  name: VsGlobal.Handlers
+  nameWithType: VsGlobal.Handlers
+  fullName: VsGlobal.Handlers
+  type: Namespace
+  assemblies:
+  - VSGlobal
+references:
+- uid: VsGlobal.Handlers.OnClientReadyHandler
+  commentId: T:VsGlobal.Handlers.OnClientReadyHandler
+  parent: VsGlobal.Handlers
+  href: VsGlobal.Handlers.OnClientReadyHandler.html
+  name: OnClientReadyHandler
+  nameWithType: OnClientReadyHandler
+  fullName: VsGlobal.Handlers.OnClientReadyHandler
+- uid: VsGlobal.Handlers.OnConnectHandler
+  commentId: T:VsGlobal.Handlers.OnConnectHandler
+  parent: VsGlobal.Handlers
+  href: VsGlobal.Handlers.OnConnectHandler.html
+  name: OnConnectHandler
+  nameWithType: OnConnectHandler
+  fullName: VsGlobal.Handlers.OnConnectHandler
+- uid: VsGlobal.Handlers.OnDisconnectHandler
+  commentId: T:VsGlobal.Handlers.OnDisconnectHandler
+  parent: VsGlobal.Handlers
+  href: VsGlobal.Handlers.OnDisconnectHandler.html
+  name: OnDisconnectHandler
+  nameWithType: OnDisconnectHandler
+  fullName: VsGlobal.Handlers.OnDisconnectHandler
+- uid: VsGlobal.Handlers.OnReconnectHandler
+  commentId: T:VsGlobal.Handlers.OnReconnectHandler
+  parent: VsGlobal.Handlers
+  href: VsGlobal.Handlers.OnReconnectHandler.html
+  name: OnReconnectHandler
+  nameWithType: OnReconnectHandler
+  fullName: VsGlobal.Handlers.OnReconnectHandler
+- uid: VsGlobal.Handlers.OnPayloadReceivedHandler
+  commentId: T:VsGlobal.Handlers.OnPayloadReceivedHandler
+  parent: VsGlobal.Handlers
+  href: VsGlobal.Handlers.OnPayloadReceivedHandler.html
+  name: OnPayloadReceivedHandler
+  nameWithType: OnPayloadReceivedHandler
+  fullName: VsGlobal.Handlers.OnPayloadReceivedHandler
+- uid: VsGlobal.Handlers
+  commentId: N:VsGlobal.Handlers
+  href: VsGlobal.html
+  name: VsGlobal.Handlers
+  nameWithType: VsGlobal.Handlers
+  fullName: VsGlobal.Handlers
+  spec.csharp:
+  - uid: VsGlobal
+    name: VsGlobal
+    href: VsGlobal.html
+  - name: .
+  - uid: VsGlobal.Handlers
+    name: Handlers
+    href: VsGlobal.Handlers.html
+  spec.vb:
+  - uid: VsGlobal
+    name: VsGlobal
+    href: VsGlobal.html
+  - name: .
+  - uid: VsGlobal.Handlers
+    name: Handlers
+    href: VsGlobal.Handlers.html

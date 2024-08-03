@@ -1,0 +1,622 @@
+### YamlMime:ManagedReference
+items:
+- uid: VSGlobal.Events
+  commentId: T:VSGlobal.Events
+  id: Events
+  parent: VSGlobal
+  children:
+  - VSGlobal.Events.OnConnect
+  - VSGlobal.Events.OnDisconnect
+  - VSGlobal.Events.OnError
+  - VSGlobal.Events.OnPayloadReceived
+  langs:
+  - csharp
+  - vb
+  name: Events
+  nameWithType: Events
+  fullName: VSGlobal.Events
+  type: Class
+  source:
+    remote:
+      path: VSGlobal/Events.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: Events
+    path: ../VSGlobal/Events.cs
+    startLine: 37
+  assemblies:
+  - VSGlobal
+  namespace: VSGlobal
+  summary: Events allow you to add callbacks to VSGlobal's events:<br /><xref href="VSGlobal.Events.OnConnect" data-throw-if-not-resolved="false"></xref><br /><xref href="VSGlobal.Events.OnDisconnect" data-throw-if-not-resolved="false"></xref><br /><xref href="VSGlobal.Events.OnError" data-throw-if-not-resolved="false"></xref><br /><xref href="VSGlobal.Events.OnPayloadReceived" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public static class Events
+    content.vb: Public Module Events
+  seealso:
+  - linkId: VSGlobal.EventArguments
+    commentId: N:VSGlobal.EventArguments
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: VSGlobal.Events.OnConnect
+  commentId: E:VSGlobal.Events.OnConnect
+  id: OnConnect
+  parent: VSGlobal.Events
+  langs:
+  - csharp
+  - vb
+  name: OnConnect
+  nameWithType: Events.OnConnect
+  fullName: VSGlobal.Events.OnConnect
+  type: Event
+  source:
+    remote:
+      path: VSGlobal/Events.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: OnConnect
+    path: ../VSGlobal/Events.cs
+    startLine: 63
+  assemblies:
+  - VSGlobal
+  namespace: VSGlobal
+  summary: >-
+    Invoked when VSGlobal has connected
+
+    <example>
+
+    Using a lambda:
+
+    <pre><code class="lang-csharp">VSGlobal.Events.OnConnect += (e) =&gt;
+
+    {
+    	// Do stuff on connect
+    	VSGlobal.Subscribe("my_module");
+    	VSGlobal.Broadcast("Hello World!", "my_module"); //&gt; OnPayloadReceived
+    };</code></pre>
+
+    Using a function:
+
+    <pre><code class="lang-csharp">public void MyCoolOnConnect(EventArgs e)
+
+    {
+    	// Do stuff on connect
+    }
+
+
+    // Then later, in a function body somewhere we register the handler.
+
+    VSGlobal.Events.OnConnect += MyCoolOnConnect;</code></pre></example>
+  example: []
+  syntax:
+    content: public static event OnConnectHandler OnConnect
+    return:
+      type: VSGlobal.Handlers.OnConnectHandler
+    content.vb: Public Shared Event OnConnect As OnConnectHandler
+- uid: VSGlobal.Events.OnDisconnect
+  commentId: E:VSGlobal.Events.OnDisconnect
+  id: OnDisconnect
+  parent: VSGlobal.Events
+  langs:
+  - csharp
+  - vb
+  name: OnDisconnect
+  nameWithType: Events.OnDisconnect
+  fullName: VSGlobal.Events.OnDisconnect
+  type: Event
+  source:
+    remote:
+      path: VSGlobal/Events.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: OnDisconnect
+    path: ../VSGlobal/Events.cs
+    startLine: 87
+  assemblies:
+  - VSGlobal
+  namespace: VSGlobal
+  summary: >-
+    Invoked when VsGlobal has disconnected (banned, server issue, skill issue)<br /><example>
+
+    Using a lambda:
+
+    <pre><code class="lang-csharp">Events.OnDisconnect += (e) =&gt;
+
+    {
+    	// Do stuff on disconnect
+    };</code></pre>
+
+    Using a function:
+
+    <pre><code class="lang-csharp">public void MyCoolOnDisconnect(EventArgs e)
+
+    {
+    	// Do stuff on disconnect     
+    }
+
+
+    // Then later, in a function body somewhere we register the handler.
+
+    Events.OnDisconnect += MyCoolOnDisconnect;</code></pre></example>
+  example: []
+  syntax:
+    content: public static event OnDisconnectHandler OnDisconnect
+    return:
+      type: VSGlobal.Handlers.OnDisconnectHandler
+    content.vb: Public Shared Event OnDisconnect As OnDisconnectHandler
+- uid: VSGlobal.Events.OnError
+  commentId: E:VSGlobal.Events.OnError
+  id: OnError
+  parent: VSGlobal.Events
+  langs:
+  - csharp
+  - vb
+  name: OnError
+  nameWithType: Events.OnError
+  fullName: VSGlobal.Events.OnError
+  type: Event
+  source:
+    remote:
+      path: VSGlobal/Events.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: OnError
+    path: ../VSGlobal/Events.cs
+    startLine: 109
+  assemblies:
+  - VSGlobal
+  namespace: VSGlobal
+  summary: >-
+    <pre><code class="lang-csharp">Events.OnError += (e) =&gt;
+
+    {
+    	// Do stuff on disconnect
+    	Console.WriteLine(e.Exception);
+    	Console.WriteLine(e.Message);
+    	};</code></pre>
+    Using a function:
+
+    <pre><code class="lang-csharp">public void MyCoolOnDisconnect(WebSocketSharper.ErrorEventArgs e)
+
+    {
+    	// Do stuff on disconnect
+    }
+
+
+    // Then later, in a function body somewhere we register the handler.
+
+    Events.OnError += MyCoolOnDisconnect;</code></pre>
+  example: []
+  syntax:
+    content: public static event OnErrorHandler OnError
+    return:
+      type: VSGlobal.Handlers.OnErrorHandler
+    content.vb: Public Shared Event OnError As OnErrorHandler
+- uid: VSGlobal.Events.OnPayloadReceived
+  commentId: E:VSGlobal.Events.OnPayloadReceived
+  id: OnPayloadReceived
+  parent: VSGlobal.Events
+  langs:
+  - csharp
+  - vb
+  name: OnPayloadReceived
+  nameWithType: Events.OnPayloadReceived
+  fullName: VSGlobal.Events.OnPayloadReceived
+  type: Event
+  source:
+    remote:
+      path: VSGlobal/Events.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: OnPayloadReceived
+    path: ../VSGlobal/Events.cs
+    startLine: 155
+  assemblies:
+  - VSGlobal
+  namespace: VSGlobal
+  summary: >-
+    Invoked when VsGlobal receives a payload<br /><example>
+
+    Using a lambda:
+
+    <pre><code class="lang-csharp">Events.OnPayloadReceived += (e) =&gt;
+
+    {
+    	// This will be called whenever a packet arrives, regardless of module or sender.
+    	if(e.payload.Module == "my_module_name")
+    	{
+    		// Now that we know the payload is for our module, we can try converting it to our expected types.
+    		MyCustomClass? myCustomThing = e.payload.DeserializePacket&lt;MyCustomClass&gt;();
+    		if(myCustomThing is MyCustomClass packet)
+    		{
+    			DoSomething(myCustomThing.value);
+    		}
+    	}
+    	else
+    	{
+    		// It's someone else's packet. Could be handy for extension mods!
+    	}
+    };</code></pre>
+
+    Using a function:
+
+    <pre><code class="lang-csharp">public void ReceiveMessagePacket(OnPayloadReceivedEventArgs e)
+
+    {
+    	// Same as the lambda, we have access to any payload coming in here.
+    	Message? maybeMessage = e.payload.DeserializePacket&lt;Message&gt;();
+
+    	// We can also be quite cheeky and attempt to deserialize it to our custom type regardless of module.
+    	// If it doesn't, it's not ours- So I suppose that's valid as well.
+    	if(maybeMessage is Message msg)
+    	{
+    		// Do something with our received custom message!
+    	}
+    }
+
+
+    // Ideally, within `public override void StartClientside(ICoreClientAPI)`
+
+    Events.OnPayloadReceived += ReceiveMessagePacket;</code></pre></example>
+  example: []
+  syntax:
+    content: public static event OnPayloadReceivedHandler OnPayloadReceived
+    return:
+      type: VSGlobal.Handlers.OnPayloadReceivedHandler
+    content.vb: Public Shared Event OnPayloadReceived As OnPayloadReceivedHandler
+  seealso:
+  - linkId: VSGlobal.EventArguments.OnPayloadReceivedEventArgs
+    commentId: T:VSGlobal.EventArguments.OnPayloadReceivedEventArgs
+references:
+- uid: VSGlobal.EventArguments
+  commentId: N:VSGlobal.EventArguments
+  href: VSGlobal.html
+  name: VSGlobal.EventArguments
+  nameWithType: VSGlobal.EventArguments
+  fullName: VSGlobal.EventArguments
+  spec.csharp:
+  - uid: VSGlobal
+    name: VSGlobal
+    href: VSGlobal.html
+  - name: .
+  - uid: VSGlobal.EventArguments
+    name: EventArguments
+    href: VSGlobal.EventArguments.html
+  spec.vb:
+  - uid: VSGlobal
+    name: VSGlobal
+    href: VSGlobal.html
+  - name: .
+  - uid: VSGlobal.EventArguments
+    name: EventArguments
+    href: VSGlobal.EventArguments.html
+- uid: VSGlobal.Events.OnConnect
+  commentId: E:VSGlobal.Events.OnConnect
+  href: VSGlobal.Events.html#VSGlobal_Events_OnConnect
+  name: OnConnect
+  nameWithType: Events.OnConnect
+  fullName: VSGlobal.Events.OnConnect
+- uid: VSGlobal.Events.OnDisconnect
+  commentId: E:VSGlobal.Events.OnDisconnect
+  href: VSGlobal.Events.html#VSGlobal_Events_OnDisconnect
+  name: OnDisconnect
+  nameWithType: Events.OnDisconnect
+  fullName: VSGlobal.Events.OnDisconnect
+- uid: VSGlobal.Events.OnError
+  commentId: E:VSGlobal.Events.OnError
+  href: VSGlobal.Events.html#VSGlobal_Events_OnError
+  name: OnError
+  nameWithType: Events.OnError
+  fullName: VSGlobal.Events.OnError
+- uid: VSGlobal.Events.OnPayloadReceived
+  commentId: E:VSGlobal.Events.OnPayloadReceived
+  href: VSGlobal.Events.html#VSGlobal_Events_OnPayloadReceived
+  name: OnPayloadReceived
+  nameWithType: Events.OnPayloadReceived
+  fullName: VSGlobal.Events.OnPayloadReceived
+- uid: VSGlobal
+  commentId: N:VSGlobal
+  href: VSGlobal.html
+  name: VSGlobal
+  nameWithType: VSGlobal
+  fullName: VSGlobal
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VSGlobal.Handlers.OnConnectHandler
+  commentId: T:VSGlobal.Handlers.OnConnectHandler
+  parent: VSGlobal.Handlers
+  href: VSGlobal.Handlers.OnConnectHandler.html
+  name: OnConnectHandler
+  nameWithType: OnConnectHandler
+  fullName: VSGlobal.Handlers.OnConnectHandler
+- uid: VSGlobal.Handlers
+  commentId: N:VSGlobal.Handlers
+  href: VSGlobal.html
+  name: VSGlobal.Handlers
+  nameWithType: VSGlobal.Handlers
+  fullName: VSGlobal.Handlers
+  spec.csharp:
+  - uid: VSGlobal
+    name: VSGlobal
+    href: VSGlobal.html
+  - name: .
+  - uid: VSGlobal.Handlers
+    name: Handlers
+    href: VSGlobal.Handlers.html
+  spec.vb:
+  - uid: VSGlobal
+    name: VSGlobal
+    href: VSGlobal.html
+  - name: .
+  - uid: VSGlobal.Handlers
+    name: Handlers
+    href: VSGlobal.Handlers.html
+- uid: VSGlobal.Handlers.OnDisconnectHandler
+  commentId: T:VSGlobal.Handlers.OnDisconnectHandler
+  parent: VSGlobal.Handlers
+  href: VSGlobal.Handlers.OnDisconnectHandler.html
+  name: OnDisconnectHandler
+  nameWithType: OnDisconnectHandler
+  fullName: VSGlobal.Handlers.OnDisconnectHandler
+- uid: VSGlobal.Handlers.OnErrorHandler
+  commentId: T:VSGlobal.Handlers.OnErrorHandler
+  parent: VSGlobal.Handlers
+  href: VSGlobal.Handlers.OnErrorHandler.html
+  name: OnErrorHandler
+  nameWithType: OnErrorHandler
+  fullName: VSGlobal.Handlers.OnErrorHandler
+- uid: VSGlobal.EventArguments.OnPayloadReceivedEventArgs
+  commentId: T:VSGlobal.EventArguments.OnPayloadReceivedEventArgs
+  href: VSGlobal.EventArguments.OnPayloadReceivedEventArgs.html
+  name: OnPayloadReceivedEventArgs
+  nameWithType: OnPayloadReceivedEventArgs
+  fullName: VSGlobal.EventArguments.OnPayloadReceivedEventArgs
+- uid: VSGlobal.Handlers.OnPayloadReceivedHandler
+  commentId: T:VSGlobal.Handlers.OnPayloadReceivedHandler
+  parent: VSGlobal.Handlers
+  href: VSGlobal.Handlers.OnPayloadReceivedHandler.html
+  name: OnPayloadReceivedHandler
+  nameWithType: OnPayloadReceivedHandler
+  fullName: VSGlobal.Handlers.OnPayloadReceivedHandler

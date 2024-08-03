@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: VsGlobal.Packets
+  commentId: N:VsGlobal.Packets
+  id: VsGlobal.Packets
+  children:
+  - VsGlobal.Packets.Extensions
+  - VsGlobal.Packets.Message
+  - VsGlobal.Packets.Payload
+  langs:
+  - csharp
+  - vb
+  name: VsGlobal.Packets
+  nameWithType: VsGlobal.Packets
+  fullName: VsGlobal.Packets
+  type: Namespace
+  assemblies:
+  - VSGlobal
+references:
+- uid: VsGlobal.Packets.Message
+  commentId: T:VsGlobal.Packets.Message
+  href: VsGlobal.Packets.Message.html
+  name: Message
+  nameWithType: Message
+  fullName: VsGlobal.Packets.Message
+- uid: VsGlobal.Packets.Payload
+  commentId: T:VsGlobal.Packets.Payload
+  parent: VsGlobal.Packets
+  href: VsGlobal.Packets.Payload.html
+  name: Payload
+  nameWithType: Payload
+  fullName: VsGlobal.Packets.Payload
+- uid: VsGlobal.Packets.Extensions
+  commentId: T:VsGlobal.Packets.Extensions
+  parent: VsGlobal.Packets
+  href: VsGlobal.Packets.Extensions.html
+  name: Extensions
+  nameWithType: Extensions
+  fullName: VsGlobal.Packets.Extensions
+- uid: VsGlobal.Packets
+  commentId: N:VsGlobal.Packets
+  href: VsGlobal.html
+  name: VsGlobal.Packets
+  nameWithType: VsGlobal.Packets
+  fullName: VsGlobal.Packets
+  spec.csharp:
+  - uid: VsGlobal
+    name: VsGlobal
+    href: VsGlobal.html
+  - name: .
+  - uid: VsGlobal.Packets
+    name: Packets
+    href: VsGlobal.Packets.html
+  spec.vb:
+  - uid: VsGlobal
+    name: VsGlobal
+    href: VsGlobal.html
+  - name: .
+  - uid: VsGlobal.Packets
+    name: Packets
+    href: VsGlobal.Packets.html

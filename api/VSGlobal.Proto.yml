@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: VSGlobal.Proto
+  commentId: N:VSGlobal.Proto
+  id: VSGlobal.Proto
+  children:
+  - VSGlobal.Proto.Payload
+  - VSGlobal.Proto.PayloadExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: VSGlobal.Proto
+  nameWithType: VSGlobal.Proto
+  fullName: VSGlobal.Proto
+  type: Namespace
+  assemblies:
+  - VSGlobal
+references:
+- uid: VSGlobal.Proto.Payload
+  commentId: T:VSGlobal.Proto.Payload
+  parent: VSGlobal.Proto
+  href: VSGlobal.Proto.Payload.html
+  name: Payload
+  nameWithType: Payload
+  fullName: VSGlobal.Proto.Payload
+- uid: VSGlobal.Proto.PayloadExtensionMethods
+  commentId: T:VSGlobal.Proto.PayloadExtensionMethods
+  parent: VSGlobal.Proto
+  href: VSGlobal.Proto.PayloadExtensionMethods.html
+  name: PayloadExtensionMethods
+  nameWithType: PayloadExtensionMethods
+  fullName: VSGlobal.Proto.PayloadExtensionMethods
+- uid: VSGlobal.Proto
+  commentId: N:VSGlobal.Proto
+  href: VSGlobal.html
+  name: VSGlobal.Proto
+  nameWithType: VSGlobal.Proto
+  fullName: VSGlobal.Proto
+  spec.csharp:
+  - uid: VSGlobal
+    name: VSGlobal
+    href: VSGlobal.html
+  - name: .
+  - uid: VSGlobal.Proto
+    name: Proto
+    href: VSGlobal.Proto.html
+  spec.vb:
+  - uid: VSGlobal
+    name: VSGlobal
+    href: VSGlobal.html
+  - name: .
+  - uid: VSGlobal.Proto
+    name: Proto
+    href: VSGlobal.Proto.html

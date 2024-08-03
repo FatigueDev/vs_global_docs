@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: VSGlobal.EventArguments
+  commentId: N:VSGlobal.EventArguments
+  id: VSGlobal.EventArguments
+  children:
+  - VSGlobal.EventArguments.OnPayloadReceivedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: VSGlobal.EventArguments
+  nameWithType: VSGlobal.EventArguments
+  fullName: VSGlobal.EventArguments
+  type: Namespace
+  assemblies:
+  - VSGlobal
+references:
+- uid: VSGlobal.EventArguments.OnPayloadReceivedEventArgs
+  commentId: T:VSGlobal.EventArguments.OnPayloadReceivedEventArgs
+  href: VSGlobal.EventArguments.OnPayloadReceivedEventArgs.html
+  name: OnPayloadReceivedEventArgs
+  nameWithType: OnPayloadReceivedEventArgs
+  fullName: VSGlobal.EventArguments.OnPayloadReceivedEventArgs

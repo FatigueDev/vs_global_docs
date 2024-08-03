@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: VsGlobal.AuthToken
+  commentId: N:VsGlobal.AuthToken
+  id: VsGlobal.AuthToken
+  children:
+  - VsGlobal.AuthToken.Config
+  langs:
+  - csharp
+  - vb
+  name: VsGlobal.AuthToken
+  nameWithType: VsGlobal.AuthToken
+  fullName: VsGlobal.AuthToken
+  type: Namespace
+  assemblies:
+  - VSGlobal
+references:
+- uid: VsGlobal.AuthToken.Config
+  commentId: T:VsGlobal.AuthToken.Config
+  href: VsGlobal.AuthToken.Config.html
+  name: Config
+  nameWithType: Config
+  fullName: VsGlobal.AuthToken.Config

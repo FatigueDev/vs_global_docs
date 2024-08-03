@@ -1,0 +1,45 @@
+### YamlMime:ManagedReference
+items:
+- uid: VsGlobal.OnConnectHandler
+  commentId: T:VsGlobal.OnConnectHandler
+  id: OnConnectHandler
+  parent: VsGlobal
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: OnConnectHandler
+  nameWithType: OnConnectHandler
+  fullName: VsGlobal.OnConnectHandler
+  type: Delegate
+  source:
+    remote:
+      path: VSGlobal/Events.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: OnConnectHandler
+    path: ../VSGlobal/Events.cs
+    startLine: 6
+  assemblies:
+  - VSGlobal
+  namespace: VsGlobal
+  syntax:
+    content: public delegate void OnConnectHandler(OnConnectEventArgs e)
+    parameters:
+    - id: e
+      type: VsGlobal.OnConnectEventArgs
+    content.vb: Public Delegate Sub OnConnectHandler(e As OnConnectEventArgs)
+references:
+- uid: VsGlobal
+  commentId: N:VsGlobal
+  href: VsGlobal.html
+  name: VsGlobal
+  nameWithType: VsGlobal
+  fullName: VsGlobal
+- uid: VsGlobal.OnConnectEventArgs
+  commentId: T:VsGlobal.OnConnectEventArgs
+  parent: VsGlobal
+  href: VsGlobal.OnConnectEventArgs.html
+  name: OnConnectEventArgs
+  nameWithType: OnConnectEventArgs
+  fullName: VsGlobal.OnConnectEventArgs

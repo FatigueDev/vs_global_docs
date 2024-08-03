@@ -1,0 +1,84 @@
+### YamlMime:ManagedReference
+items:
+- uid: VsGlobal.Handlers.OnPayloadReceivedHandler
+  commentId: T:VsGlobal.Handlers.OnPayloadReceivedHandler
+  id: OnPayloadReceivedHandler
+  parent: VsGlobal.Handlers
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: OnPayloadReceivedHandler
+  nameWithType: OnPayloadReceivedHandler
+  fullName: VsGlobal.Handlers.OnPayloadReceivedHandler
+  type: Delegate
+  source:
+    remote:
+      path: VSGlobal/Events.cs
+      branch: main
+      repo: https://github.com/FatigueDev/vs_global.git
+    id: OnPayloadReceivedHandler
+    path: ../VSGlobal/Events.cs
+    startLine: 20
+  assemblies:
+  - VSGlobal
+  namespace: VsGlobal.Handlers
+  example: []
+  syntax:
+    content: public delegate void OnPayloadReceivedHandler(OnPayloadReceivedEventArgs e)
+    parameters:
+    - id: e
+      type: VsGlobal.EventArguments.OnPayloadReceivedEventArgs
+    content.vb: Public Delegate Sub OnPayloadReceivedHandler(e As OnPayloadReceivedEventArgs)
+references:
+- uid: VsGlobal.Handlers
+  commentId: N:VsGlobal.Handlers
+  href: VsGlobal.html
+  name: VsGlobal.Handlers
+  nameWithType: VsGlobal.Handlers
+  fullName: VsGlobal.Handlers
+  spec.csharp:
+  - uid: VsGlobal
+    name: VsGlobal
+    href: VsGlobal.html
+  - name: .
+  - uid: VsGlobal.Handlers
+    name: Handlers
+    href: VsGlobal.Handlers.html
+  spec.vb:
+  - uid: VsGlobal
+    name: VsGlobal
+    href: VsGlobal.html
+  - name: .
+  - uid: VsGlobal.Handlers
+    name: Handlers
+    href: VsGlobal.Handlers.html
+- uid: VsGlobal.EventArguments.OnPayloadReceivedEventArgs
+  commentId: T:VsGlobal.EventArguments.OnPayloadReceivedEventArgs
+  parent: VsGlobal.EventArguments
+  href: VsGlobal.EventArguments.OnPayloadReceivedEventArgs.html
+  name: OnPayloadReceivedEventArgs
+  nameWithType: OnPayloadReceivedEventArgs
+  fullName: VsGlobal.EventArguments.OnPayloadReceivedEventArgs
+- uid: VsGlobal.EventArguments
+  commentId: N:VsGlobal.EventArguments
+  href: VsGlobal.html
+  name: VsGlobal.EventArguments
+  nameWithType: VsGlobal.EventArguments
+  fullName: VsGlobal.EventArguments
+  spec.csharp:
+  - uid: VsGlobal
+    name: VsGlobal
+    href: VsGlobal.html
+  - name: .
+  - uid: VsGlobal.EventArguments
+    name: EventArguments
+    href: VsGlobal.EventArguments.html
+  spec.vb:
+  - uid: VsGlobal
+    name: VsGlobal
+    href: VsGlobal.html
+  - name: .
+  - uid: VsGlobal.EventArguments
+    name: EventArguments
+    href: VsGlobal.EventArguments.html
