@@ -12,6 +12,106 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/VSGlobal.EventArguments.OnPayloadReceivedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VSGlobal.EventArguments.OnPayloadReceivedEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VSGlobal.EventArguments.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VSGlobal.EventArguments.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VSGlobal.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VSGlobal.Events.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VSGlobal.Logger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VSGlobal.Logger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VSGlobal.Network.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VSGlobal.Network.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VSGlobal.Proto.Payload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VSGlobal.Proto.Payload.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VSGlobal.Proto.PayloadExtensionMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VSGlobal.Proto.PayloadExtensionMethods.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VSGlobal.Proto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VSGlobal.Proto.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VSGlobal.VSGlobalModSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VSGlobal.VSGlobalModSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VSGlobal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VSGlobal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/VsGlobal.AuthToken.Config.yml",
       "output": {
         ".html": {
@@ -389,16 +489,6 @@
       "output": {
         ".html": {
           "relative_path": "docs/getting-started.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/introduction.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/introduction.html"
         }
       },
       "version": ""

@@ -1,6 +1,361 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: VSGlobal
+  name: VSGlobal
+  href: api/VSGlobal.html
+  commentId: N:VSGlobal
+  fullName: VSGlobal
+  nameWithType: VSGlobal
+- uid: VSGlobal.EventArguments
+  name: VSGlobal.EventArguments
+  href: api/VSGlobal.EventArguments.html
+  commentId: N:VSGlobal.EventArguments
+  fullName: VSGlobal.EventArguments
+  nameWithType: VSGlobal.EventArguments
+- uid: VSGlobal.EventArguments.OnPayloadReceivedEventArgs
+  name: OnPayloadReceivedEventArgs
+  href: api/VSGlobal.EventArguments.OnPayloadReceivedEventArgs.html
+  commentId: T:VSGlobal.EventArguments.OnPayloadReceivedEventArgs
+  fullName: VSGlobal.EventArguments.OnPayloadReceivedEventArgs
+  nameWithType: OnPayloadReceivedEventArgs
+- uid: VSGlobal.EventArguments.OnPayloadReceivedEventArgs.payload
+  name: payload
+  href: api/VSGlobal.EventArguments.OnPayloadReceivedEventArgs.html#VSGlobal_EventArguments_OnPayloadReceivedEventArgs_payload
+  commentId: F:VSGlobal.EventArguments.OnPayloadReceivedEventArgs.payload
+  fullName: VSGlobal.EventArguments.OnPayloadReceivedEventArgs.payload
+  nameWithType: OnPayloadReceivedEventArgs.payload
+- uid: VSGlobal.Events
+  name: Events
+  href: api/VSGlobal.Events.html
+  commentId: T:VSGlobal.Events
+  fullName: VSGlobal.Events
+  nameWithType: Events
+- uid: VSGlobal.Events.OnConnect
+  name: OnConnect
+  href: api/VSGlobal.Events.html#VSGlobal_Events_OnConnect
+  commentId: E:VSGlobal.Events.OnConnect
+  fullName: VSGlobal.Events.OnConnect
+  nameWithType: Events.OnConnect
+- uid: VSGlobal.Events.OnDisconnect
+  name: OnDisconnect
+  href: api/VSGlobal.Events.html#VSGlobal_Events_OnDisconnect
+  commentId: E:VSGlobal.Events.OnDisconnect
+  fullName: VSGlobal.Events.OnDisconnect
+  nameWithType: Events.OnDisconnect
+- uid: VSGlobal.Events.OnError
+  name: OnError
+  href: api/VSGlobal.Events.html#VSGlobal_Events_OnError
+  commentId: E:VSGlobal.Events.OnError
+  fullName: VSGlobal.Events.OnError
+  nameWithType: Events.OnError
+- uid: VSGlobal.Events.OnPayloadReceived
+  name: OnPayloadReceived
+  href: api/VSGlobal.Events.html#VSGlobal_Events_OnPayloadReceived
+  commentId: E:VSGlobal.Events.OnPayloadReceived
+  fullName: VSGlobal.Events.OnPayloadReceived
+  nameWithType: Events.OnPayloadReceived
+- uid: VSGlobal.Logger
+  name: Logger
+  href: api/VSGlobal.Logger.html
+  commentId: T:VSGlobal.Logger
+  fullName: VSGlobal.Logger
+  nameWithType: Logger
+- uid: VSGlobal.Logger.#ctor(Vintagestory.API.Client.ICoreClientAPI)
+  name: Logger(ICoreClientAPI)
+  href: api/VSGlobal.Logger.html#VSGlobal_Logger__ctor_Vintagestory_API_Client_ICoreClientAPI_
+  commentId: M:VSGlobal.Logger.#ctor(Vintagestory.API.Client.ICoreClientAPI)
+  name.vb: New(ICoreClientAPI)
+  fullName: VSGlobal.Logger.Logger(Vintagestory.API.Client.ICoreClientAPI)
+  fullName.vb: VSGlobal.Logger.New(Vintagestory.API.Client.ICoreClientAPI)
+  nameWithType: Logger.Logger(ICoreClientAPI)
+  nameWithType.vb: Logger.New(ICoreClientAPI)
+- uid: VSGlobal.Logger.#ctor*
+  name: Logger
+  href: api/VSGlobal.Logger.html#VSGlobal_Logger__ctor_
+  commentId: Overload:VSGlobal.Logger.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: VSGlobal.Logger.Logger
+  fullName.vb: VSGlobal.Logger.New
+  nameWithType: Logger.Logger
+  nameWithType.vb: Logger.New
+- uid: VSGlobal.Logger.BeginScope*
+  name: BeginScope
+  href: api/VSGlobal.Logger.html#VSGlobal_Logger_BeginScope_
+  commentId: Overload:VSGlobal.Logger.BeginScope
+  isSpec: "True"
+  fullName: VSGlobal.Logger.BeginScope
+  nameWithType: Logger.BeginScope
+- uid: VSGlobal.Logger.BeginScope``1(``0)
+  name: BeginScope<TState>(TState)
+  href: api/VSGlobal.Logger.html#VSGlobal_Logger_BeginScope__1___0_
+  commentId: M:VSGlobal.Logger.BeginScope``1(``0)
+  name.vb: BeginScope(Of TState)(TState)
+  fullName: VSGlobal.Logger.BeginScope<TState>(TState)
+  fullName.vb: VSGlobal.Logger.BeginScope(Of TState)(TState)
+  nameWithType: Logger.BeginScope<TState>(TState)
+  nameWithType.vb: Logger.BeginScope(Of TState)(TState)
+- uid: VSGlobal.Logger.IsEnabled(Microsoft.Extensions.Logging.LogLevel)
+  name: IsEnabled(LogLevel)
+  href: api/VSGlobal.Logger.html#VSGlobal_Logger_IsEnabled_Microsoft_Extensions_Logging_LogLevel_
+  commentId: M:VSGlobal.Logger.IsEnabled(Microsoft.Extensions.Logging.LogLevel)
+  fullName: VSGlobal.Logger.IsEnabled(Microsoft.Extensions.Logging.LogLevel)
+  nameWithType: Logger.IsEnabled(LogLevel)
+- uid: VSGlobal.Logger.IsEnabled*
+  name: IsEnabled
+  href: api/VSGlobal.Logger.html#VSGlobal_Logger_IsEnabled_
+  commentId: Overload:VSGlobal.Logger.IsEnabled
+  isSpec: "True"
+  fullName: VSGlobal.Logger.IsEnabled
+  nameWithType: Logger.IsEnabled
+- uid: VSGlobal.Logger.Log*
+  name: Log
+  href: api/VSGlobal.Logger.html#VSGlobal_Logger_Log_
+  commentId: Overload:VSGlobal.Logger.Log
+  isSpec: "True"
+  fullName: VSGlobal.Logger.Log
+  nameWithType: Logger.Log
+- uid: VSGlobal.Logger.Log``1(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,``0,System.Exception,System.Func{``0,System.Exception,System.String})
+  name: Log<TState>(LogLevel, EventId, TState, Exception?, Func<TState, Exception?, string>)
+  href: api/VSGlobal.Logger.html#VSGlobal_Logger_Log__1_Microsoft_Extensions_Logging_LogLevel_Microsoft_Extensions_Logging_EventId___0_System_Exception_System_Func___0_System_Exception_System_String__
+  commentId: M:VSGlobal.Logger.Log``1(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,``0,System.Exception,System.Func{``0,System.Exception,System.String})
+  name.vb: Log(Of TState)(LogLevel, EventId, TState, Exception, Func(Of TState, Exception, String))
+  fullName: VSGlobal.Logger.Log<TState>(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, TState, System.Exception?, System.Func<TState, System.Exception?, string>)
+  fullName.vb: VSGlobal.Logger.Log(Of TState)(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, TState, System.Exception, System.Func(Of TState, System.Exception, String))
+  nameWithType: Logger.Log<TState>(LogLevel, EventId, TState, Exception?, Func<TState, Exception?, string>)
+  nameWithType.vb: Logger.Log(Of TState)(LogLevel, EventId, TState, Exception, Func(Of TState, Exception, String))
+- uid: VSGlobal.Network
+  name: Network
+  href: api/VSGlobal.Network.html
+  commentId: T:VSGlobal.Network
+  fullName: VSGlobal.Network
+  nameWithType: Network
+- uid: VSGlobal.Network.Broadcast*
+  name: Broadcast
+  href: api/VSGlobal.Network.html#VSGlobal_Network_Broadcast_
+  commentId: Overload:VSGlobal.Network.Broadcast
+  isSpec: "True"
+  fullName: VSGlobal.Network.Broadcast
+  nameWithType: Network.Broadcast
+- uid: VSGlobal.Network.Broadcast``1(``0,System.String)
+  name: Broadcast<T>(T, string)
+  href: api/VSGlobal.Network.html#VSGlobal_Network_Broadcast__1___0_System_String_
+  commentId: M:VSGlobal.Network.Broadcast``1(``0,System.String)
+  name.vb: Broadcast(Of T)(T, String)
+  fullName: VSGlobal.Network.Broadcast<T>(T, string)
+  fullName.vb: VSGlobal.Network.Broadcast(Of T)(T, String)
+  nameWithType: Network.Broadcast<T>(T, string)
+  nameWithType.vb: Network.Broadcast(Of T)(T, String)
+- uid: VSGlobal.Network.Subscribe(System.String)
+  name: Subscribe(string)
+  href: api/VSGlobal.Network.html#VSGlobal_Network_Subscribe_System_String_
+  commentId: M:VSGlobal.Network.Subscribe(System.String)
+  name.vb: Subscribe(String)
+  fullName: VSGlobal.Network.Subscribe(string)
+  fullName.vb: VSGlobal.Network.Subscribe(String)
+  nameWithType: Network.Subscribe(string)
+  nameWithType.vb: Network.Subscribe(String)
+- uid: VSGlobal.Network.Subscribe*
+  name: Subscribe
+  href: api/VSGlobal.Network.html#VSGlobal_Network_Subscribe_
+  commentId: Overload:VSGlobal.Network.Subscribe
+  isSpec: "True"
+  fullName: VSGlobal.Network.Subscribe
+  nameWithType: Network.Subscribe
+- uid: VSGlobal.Proto
+  name: VSGlobal.Proto
+  href: api/VSGlobal.Proto.html
+  commentId: N:VSGlobal.Proto
+  fullName: VSGlobal.Proto
+  nameWithType: VSGlobal.Proto
+- uid: VSGlobal.Proto.Payload
+  name: Payload
+  href: api/VSGlobal.Proto.Payload.html
+  commentId: T:VSGlobal.Proto.Payload
+  fullName: VSGlobal.Proto.Payload
+  nameWithType: Payload
+- uid: VSGlobal.Proto.Payload.#ctor
+  name: Payload()
+  href: api/VSGlobal.Proto.Payload.html#VSGlobal_Proto_Payload__ctor
+  commentId: M:VSGlobal.Proto.Payload.#ctor
+  name.vb: New()
+  fullName: VSGlobal.Proto.Payload.Payload()
+  fullName.vb: VSGlobal.Proto.Payload.New()
+  nameWithType: Payload.Payload()
+  nameWithType.vb: Payload.New()
+- uid: VSGlobal.Proto.Payload.#ctor(System.String)
+  name: Payload(string)
+  href: api/VSGlobal.Proto.Payload.html#VSGlobal_Proto_Payload__ctor_System_String_
+  commentId: M:VSGlobal.Proto.Payload.#ctor(System.String)
+  name.vb: New(String)
+  fullName: VSGlobal.Proto.Payload.Payload(string)
+  fullName.vb: VSGlobal.Proto.Payload.New(String)
+  nameWithType: Payload.Payload(string)
+  nameWithType.vb: Payload.New(String)
+- uid: VSGlobal.Proto.Payload.#ctor(System.String,System.String)
+  name: Payload(string, string)
+  href: api/VSGlobal.Proto.Payload.html#VSGlobal_Proto_Payload__ctor_System_String_System_String_
+  commentId: M:VSGlobal.Proto.Payload.#ctor(System.String,System.String)
+  name.vb: New(String, String)
+  fullName: VSGlobal.Proto.Payload.Payload(string, string)
+  fullName.vb: VSGlobal.Proto.Payload.New(String, String)
+  nameWithType: Payload.Payload(string, string)
+  nameWithType.vb: Payload.New(String, String)
+- uid: VSGlobal.Proto.Payload.#ctor*
+  name: Payload
+  href: api/VSGlobal.Proto.Payload.html#VSGlobal_Proto_Payload__ctor_
+  commentId: Overload:VSGlobal.Proto.Payload.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: VSGlobal.Proto.Payload.Payload
+  fullName.vb: VSGlobal.Proto.Payload.New
+  nameWithType: Payload.Payload
+  nameWithType.vb: Payload.New
+- uid: VSGlobal.Proto.Payload.Deserialize(System.Byte[],System.Int32)
+  name: Deserialize(byte[], int)
+  href: api/VSGlobal.Proto.Payload.html#VSGlobal_Proto_Payload_Deserialize_System_Byte___System_Int32_
+  commentId: M:VSGlobal.Proto.Payload.Deserialize(System.Byte[],System.Int32)
+  name.vb: Deserialize(Byte(), Integer)
+  fullName: VSGlobal.Proto.Payload.Deserialize(byte[], int)
+  fullName.vb: VSGlobal.Proto.Payload.Deserialize(Byte(), Integer)
+  nameWithType: Payload.Deserialize(byte[], int)
+  nameWithType.vb: Payload.Deserialize(Byte(), Integer)
+- uid: VSGlobal.Proto.Payload.Deserialize*
+  name: Deserialize
+  href: api/VSGlobal.Proto.Payload.html#VSGlobal_Proto_Payload_Deserialize_
+  commentId: Overload:VSGlobal.Proto.Payload.Deserialize
+  isSpec: "True"
+  fullName: VSGlobal.Proto.Payload.Deserialize
+  nameWithType: Payload.Deserialize
+- uid: VSGlobal.Proto.Payload.Event
+  name: Event
+  href: api/VSGlobal.Proto.Payload.html#VSGlobal_Proto_Payload_Event
+  commentId: P:VSGlobal.Proto.Payload.Event
+  fullName: VSGlobal.Proto.Payload.Event
+  nameWithType: Payload.Event
+- uid: VSGlobal.Proto.Payload.Event*
+  name: Event
+  href: api/VSGlobal.Proto.Payload.html#VSGlobal_Proto_Payload_Event_
+  commentId: Overload:VSGlobal.Proto.Payload.Event
+  isSpec: "True"
+  fullName: VSGlobal.Proto.Payload.Event
+  nameWithType: Payload.Event
+- uid: VSGlobal.Proto.Payload.Module
+  name: Module
+  href: api/VSGlobal.Proto.Payload.html#VSGlobal_Proto_Payload_Module
+  commentId: P:VSGlobal.Proto.Payload.Module
+  fullName: VSGlobal.Proto.Payload.Module
+  nameWithType: Payload.Module
+- uid: VSGlobal.Proto.Payload.Module*
+  name: Module
+  href: api/VSGlobal.Proto.Payload.html#VSGlobal_Proto_Payload_Module_
+  commentId: Overload:VSGlobal.Proto.Payload.Module
+  isSpec: "True"
+  fullName: VSGlobal.Proto.Payload.Module
+  nameWithType: Payload.Module
+- uid: VSGlobal.Proto.Payload.PacketType
+  name: PacketType
+  href: api/VSGlobal.Proto.Payload.html#VSGlobal_Proto_Payload_PacketType
+  commentId: P:VSGlobal.Proto.Payload.PacketType
+  fullName: VSGlobal.Proto.Payload.PacketType
+  nameWithType: Payload.PacketType
+- uid: VSGlobal.Proto.Payload.PacketType*
+  name: PacketType
+  href: api/VSGlobal.Proto.Payload.html#VSGlobal_Proto_Payload_PacketType_
+  commentId: Overload:VSGlobal.Proto.Payload.PacketType
+  isSpec: "True"
+  fullName: VSGlobal.Proto.Payload.PacketType
+  nameWithType: Payload.PacketType
+- uid: VSGlobal.Proto.Payload.PacketValue
+  name: PacketValue
+  href: api/VSGlobal.Proto.Payload.html#VSGlobal_Proto_Payload_PacketValue
+  commentId: P:VSGlobal.Proto.Payload.PacketValue
+  fullName: VSGlobal.Proto.Payload.PacketValue
+  nameWithType: Payload.PacketValue
+- uid: VSGlobal.Proto.Payload.PacketValue*
+  name: PacketValue
+  href: api/VSGlobal.Proto.Payload.html#VSGlobal_Proto_Payload_PacketValue_
+  commentId: Overload:VSGlobal.Proto.Payload.PacketValue
+  isSpec: "True"
+  fullName: VSGlobal.Proto.Payload.PacketValue
+  nameWithType: Payload.PacketValue
+- uid: VSGlobal.Proto.PayloadExtensionMethods
+  name: PayloadExtensionMethods
+  href: api/VSGlobal.Proto.PayloadExtensionMethods.html
+  commentId: T:VSGlobal.Proto.PayloadExtensionMethods
+  fullName: VSGlobal.Proto.PayloadExtensionMethods
+  nameWithType: PayloadExtensionMethods
+- uid: VSGlobal.Proto.PayloadExtensionMethods.DeserializePacket*
+  name: DeserializePacket
+  href: api/VSGlobal.Proto.PayloadExtensionMethods.html#VSGlobal_Proto_PayloadExtensionMethods_DeserializePacket_
+  commentId: Overload:VSGlobal.Proto.PayloadExtensionMethods.DeserializePacket
+  isSpec: "True"
+  fullName: VSGlobal.Proto.PayloadExtensionMethods.DeserializePacket
+  nameWithType: PayloadExtensionMethods.DeserializePacket
+- uid: VSGlobal.Proto.PayloadExtensionMethods.DeserializePacket``1(VSGlobal.Proto.Payload)
+  name: DeserializePacket<T>(Payload)
+  href: api/VSGlobal.Proto.PayloadExtensionMethods.html#VSGlobal_Proto_PayloadExtensionMethods_DeserializePacket__1_VSGlobal_Proto_Payload_
+  commentId: M:VSGlobal.Proto.PayloadExtensionMethods.DeserializePacket``1(VSGlobal.Proto.Payload)
+  name.vb: DeserializePacket(Of T)(Payload)
+  fullName: VSGlobal.Proto.PayloadExtensionMethods.DeserializePacket<T>(VSGlobal.Proto.Payload)
+  fullName.vb: VSGlobal.Proto.PayloadExtensionMethods.DeserializePacket(Of T)(VSGlobal.Proto.Payload)
+  nameWithType: PayloadExtensionMethods.DeserializePacket<T>(Payload)
+  nameWithType.vb: PayloadExtensionMethods.DeserializePacket(Of T)(Payload)
+- uid: VSGlobal.Proto.PayloadExtensionMethods.Serialize(VSGlobal.Proto.Payload)
+  name: Serialize(Payload)
+  href: api/VSGlobal.Proto.PayloadExtensionMethods.html#VSGlobal_Proto_PayloadExtensionMethods_Serialize_VSGlobal_Proto_Payload_
+  commentId: M:VSGlobal.Proto.PayloadExtensionMethods.Serialize(VSGlobal.Proto.Payload)
+  fullName: VSGlobal.Proto.PayloadExtensionMethods.Serialize(VSGlobal.Proto.Payload)
+  nameWithType: PayloadExtensionMethods.Serialize(Payload)
+- uid: VSGlobal.Proto.PayloadExtensionMethods.Serialize*
+  name: Serialize
+  href: api/VSGlobal.Proto.PayloadExtensionMethods.html#VSGlobal_Proto_PayloadExtensionMethods_Serialize_
+  commentId: Overload:VSGlobal.Proto.PayloadExtensionMethods.Serialize
+  isSpec: "True"
+  fullName: VSGlobal.Proto.PayloadExtensionMethods.Serialize
+  nameWithType: PayloadExtensionMethods.Serialize
+- uid: VSGlobal.Proto.PayloadExtensionMethods.Serialize``1(VSGlobal.Proto.Payload,``0)
+  name: Serialize<T>(Payload, T)
+  href: api/VSGlobal.Proto.PayloadExtensionMethods.html#VSGlobal_Proto_PayloadExtensionMethods_Serialize__1_VSGlobal_Proto_Payload___0_
+  commentId: M:VSGlobal.Proto.PayloadExtensionMethods.Serialize``1(VSGlobal.Proto.Payload,``0)
+  name.vb: Serialize(Of T)(Payload, T)
+  fullName: VSGlobal.Proto.PayloadExtensionMethods.Serialize<T>(VSGlobal.Proto.Payload, T)
+  fullName.vb: VSGlobal.Proto.PayloadExtensionMethods.Serialize(Of T)(VSGlobal.Proto.Payload, T)
+  nameWithType: PayloadExtensionMethods.Serialize<T>(Payload, T)
+  nameWithType.vb: PayloadExtensionMethods.Serialize(Of T)(Payload, T)
+- uid: VSGlobal.VSGlobalModSystem
+  name: VSGlobalModSystem
+  href: api/VSGlobal.VSGlobalModSystem.html
+  commentId: T:VSGlobal.VSGlobalModSystem
+  fullName: VSGlobal.VSGlobalModSystem
+  nameWithType: VSGlobalModSystem
+- uid: VSGlobal.VSGlobalModSystem.ExecuteOrder
+  name: ExecuteOrder()
+  href: api/VSGlobal.VSGlobalModSystem.html#VSGlobal_VSGlobalModSystem_ExecuteOrder
+  commentId: M:VSGlobal.VSGlobalModSystem.ExecuteOrder
+  fullName: VSGlobal.VSGlobalModSystem.ExecuteOrder()
+  nameWithType: VSGlobalModSystem.ExecuteOrder()
+- uid: VSGlobal.VSGlobalModSystem.ExecuteOrder*
+  name: ExecuteOrder
+  href: api/VSGlobal.VSGlobalModSystem.html#VSGlobal_VSGlobalModSystem_ExecuteOrder_
+  commentId: Overload:VSGlobal.VSGlobalModSystem.ExecuteOrder
+  isSpec: "True"
+  fullName: VSGlobal.VSGlobalModSystem.ExecuteOrder
+  nameWithType: VSGlobalModSystem.ExecuteOrder
+- uid: VSGlobal.VSGlobalModSystem.StartClientSide(Vintagestory.API.Client.ICoreClientAPI)
+  name: StartClientSide(ICoreClientAPI)
+  href: api/VSGlobal.VSGlobalModSystem.html#VSGlobal_VSGlobalModSystem_StartClientSide_Vintagestory_API_Client_ICoreClientAPI_
+  commentId: M:VSGlobal.VSGlobalModSystem.StartClientSide(Vintagestory.API.Client.ICoreClientAPI)
+  fullName: VSGlobal.VSGlobalModSystem.StartClientSide(Vintagestory.API.Client.ICoreClientAPI)
+  nameWithType: VSGlobalModSystem.StartClientSide(ICoreClientAPI)
+- uid: VSGlobal.VSGlobalModSystem.StartClientSide*
+  name: StartClientSide
+  href: api/VSGlobal.VSGlobalModSystem.html#VSGlobal_VSGlobalModSystem_StartClientSide_
+  commentId: Overload:VSGlobal.VSGlobalModSystem.StartClientSide
+  isSpec: "True"
+  fullName: VSGlobal.VSGlobalModSystem.StartClientSide
+  nameWithType: VSGlobalModSystem.StartClientSide
 - uid: VsGlobal
   name: VsGlobal
   href: api/VsGlobal.html
