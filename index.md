@@ -13,6 +13,6 @@ Cool for stuff like:
 - A global marketplace
 - Broadcast to everyone that you were eaten by a wolf again
 
-## [Dip down into the Guides](vs_global_docs/docs/getting-started.html)
+## [Dip down into the Guides](./docs/getting-started.html)
 
-## [Dive deep into the Docs](vs_global_docs/api/VsGlobal.html)
+## [Dive deep into the Docs](./api/VsGlobal.html)

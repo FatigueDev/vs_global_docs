@@ -68,4 +68,4 @@ Broadcast(()=>{ return "Someone test this for me, please! - Lila"; }, "my_channe
 // The list goes on. It's generic; go apeshit.
 ```
 
-### [Now you're familiar with the basics, you can look into the detailed API docs!](vs_global_docs/api/VsGlobal.html)
+### [Now you're familiar with the basics, you can look into the detailed API docs!](../api/VsGlobal.html)
