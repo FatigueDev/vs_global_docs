@@ -8,7 +8,7 @@ A nifty networking solution for lazy people. Clientside only, lets you send and 
 So someone in one singleplayer world can receive a packet from someone in another singleplayer world.
 
 Cool for stuff like:
-- A global chat
+- A global chat (in progress)
 - Sending items across servers / worlds
 - A global marketplace
 - Broadcast to everyone that you were eaten by a wolf again
