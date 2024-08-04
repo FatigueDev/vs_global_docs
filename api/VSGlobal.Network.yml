@@ -21,7 +21,7 @@ items:
       repo: https://github.com/FatigueDev/vs_global.git
     id: Network
     path: ../VSGlobal/Network.cs
-    startLine: 19
+    startLine: 12
   assemblies:
   - VSGlobal
   namespace: VSGlobal
@@ -58,7 +58,7 @@ items:
       repo: https://github.com/FatigueDev/vs_global.git
     id: Broadcast
     path: ../VSGlobal/Network.cs
-    startLine: 52
+    startLine: 45
   assemblies:
   - VSGlobal
   namespace: VSGlobal
@@ -138,7 +138,7 @@ items:
       repo: https://github.com/FatigueDev/vs_global.git
     id: Subscribe
     path: ../VSGlobal/Network.cs
-    startLine: 66
+    startLine: 59
   assemblies:
   - VSGlobal
   namespace: VSGlobal

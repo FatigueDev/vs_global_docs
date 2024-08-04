@@ -2,11 +2,11 @@
 
 ## Installation - WIP :^)
 
-- Download and install the VSGlobal mod from the ModDB.
+- Download and install the [VSGlobal mod from the ModDB](https://mods.vintagestory.at/vsglobal).
 - Add the following package reference to your .csproj file and make sure it is exclude it from the build process.
 
 ```xml
-<PackageReference Include="VSGlobal" Version="1.0.0">
+<PackageReference Include="VSGlobal" Version="1.0.1" >
     <Private>true</Private>
     <PrivateAssets>all</PrivateAssets>
 </PackageReference>
